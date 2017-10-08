@@ -18,6 +18,8 @@
 		55CED9C11F7E8AB600BD5365 /* HanumanChalisaVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CED9C01F7E8AB600BD5365 /* HanumanChalisaVCViewController.swift */; };
 		7E0EB7DF5AC8CFC4795FC8B3 /* Pods_SidebarMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DD4EF82A6B02F13A55B7B3F /* Pods_SidebarMenu.framework */; };
 		8B676EC01F8AD391006D28FE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B676EBF1F8AD391006D28FE /* LoginViewController.swift */; };
+		8B676EC21F8AD775006D28FE /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B676EC11F8AD775006D28FE /* SafariServices.framework */; };
+		8B676EC41F8AD77A006D28FE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B676EC31F8AD77A006D28FE /* SystemConfiguration.framework */; };
 		903B70401F7EB8080045C2ED /* bhajagovindham.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 903B703F1F7EB8080045C2ED /* bhajagovindham.pdf */; };
 		903B70421F7EBECA0045C2ED /* BhajagovindamVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903B70411F7EBECA0045C2ED /* BhajagovindamVC.swift */; };
 		F47029F61A7F27DB00E30A3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47029F51A7F27DB00E30A3C /* AppDelegate.swift */; };
@@ -56,6 +58,8 @@
 		7481C8840FE71F970EF16D47 /* Pods-SidebarMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SidebarMenu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SidebarMenu/Pods-SidebarMenu.debug.xcconfig"; sourceTree = "<group>"; };
 		8B676EBC1F8AD31E006D28FE /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8B676EBF1F8AD391006D28FE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Login/LoginViewController.swift; sourceTree = SOURCE_ROOT; };
+		8B676EC11F8AD775006D28FE /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		8B676EC31F8AD77A006D28FE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		903B703F1F7EB8080045C2ED /* bhajagovindham.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = bhajagovindham.pdf; sourceTree = "<group>"; };
 		903B70411F7EBECA0045C2ED /* BhajagovindamVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BhajagovindamVC.swift; sourceTree = "<group>"; };
 		9F4B36C3FB3FC5FA9411BD73 /* Pods_SidebarMenuTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SidebarMenuTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +82,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B676EC41F8AD77A006D28FE /* SystemConfiguration.framework in Frameworks */,
+				8B676EC21F8AD775006D28FE /* SafariServices.framework in Frameworks */,
 				F4702A161A7F342F00E30A3C /* MapKit.framework in Frameworks */,
 				7E0EB7DF5AC8CFC4795FC8B3 /* Pods_SidebarMenu.framework in Frameworks */,
 			);
@@ -118,6 +124,8 @@
 		753302474B62A705C51471DA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8B676EC31F8AD77A006D28FE /* SystemConfiguration.framework */,
+				8B676EC11F8AD775006D28FE /* SafariServices.framework */,
 				6DD4EF82A6B02F13A55B7B3F /* Pods_SidebarMenu.framework */,
 				9F4B36C3FB3FC5FA9411BD73 /* Pods_SidebarMenuTests.framework */,
 			);
@@ -581,6 +589,57 @@
 				INFOPLIST_FILE = SidebarMenu/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AddressBook\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"FirebaseAnalytics\"",
+					"-framework",
+					"\"FirebaseAuth\"",
+					"-framework",
+					"\"FirebaseCore\"",
+					"-framework",
+					"\"FirebaseCoreDiagnostics\"",
+					"-framework",
+					"\"FirebaseInstanceID\"",
+					"-framework",
+					"\"FirebaseMessaging\"",
+					"-framework",
+					"\"FirebaseNanoPB\"",
+					"-framework",
+					"\"FirebaseStorage\"",
+					"-framework",
+					"\"GTMOAuth2\"",
+					"-framework",
+					"\"GTMSessionFetcher\"",
+					"-framework",
+					"\"GoogleSignIn\"",
+					"-framework",
+					"\"GoogleToolboxForMac\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Protobuf\"",
+					"-framework",
+					"\"SafariServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"nanopb\"",
+					"$(OTHER_LDFLAGS)",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ppam.con.Temple;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SidebarMenu/SidebarMenu-Bridging-Header.h";
@@ -599,6 +658,57 @@
 				INFOPLIST_FILE = SidebarMenu/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AddressBook\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"FirebaseAnalytics\"",
+					"-framework",
+					"\"FirebaseAuth\"",
+					"-framework",
+					"\"FirebaseCore\"",
+					"-framework",
+					"\"FirebaseCoreDiagnostics\"",
+					"-framework",
+					"\"FirebaseInstanceID\"",
+					"-framework",
+					"\"FirebaseMessaging\"",
+					"-framework",
+					"\"FirebaseNanoPB\"",
+					"-framework",
+					"\"FirebaseStorage\"",
+					"-framework",
+					"\"GTMOAuth2\"",
+					"-framework",
+					"\"GTMSessionFetcher\"",
+					"-framework",
+					"\"GoogleSignIn\"",
+					"-framework",
+					"\"GoogleToolboxForMac\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Protobuf\"",
+					"-framework",
+					"\"SafariServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"nanopb\"",
+					"$(OTHER_LDFLAGS)",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ppam.con.Temple;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SidebarMenu/SidebarMenu-Bridging-Header.h";
