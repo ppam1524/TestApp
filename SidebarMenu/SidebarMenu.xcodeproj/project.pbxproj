@@ -44,7 +44,6 @@
 		3B2D69C8A6CA7833CCD3289C /* Pods-SidebarMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SidebarMenu.release.xcconfig"; path = "Pods/Target Support Files/Pods-SidebarMenu/Pods-SidebarMenu.release.xcconfig"; sourceTree = "<group>"; };
 		6DD4EF82A6B02F13A55B7B3F /* Pods_SidebarMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SidebarMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7481C8840FE71F970EF16D47 /* Pods-SidebarMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SidebarMenu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SidebarMenu/Pods-SidebarMenu.debug.xcconfig"; sourceTree = "<group>"; };
-		8B676EBC1F8AD31E006D28FE /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8B676EBF1F8AD391006D28FE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Login/LoginViewController.swift; sourceTree = SOURCE_ROOT; };
 		8B676EC11F8AD775006D28FE /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		8B676EC31F8AD77A006D28FE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -59,6 +58,7 @@
 		8B676EE11F8ADB2B006D28FE /* HanumanChalisaVCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HanumanChalisaVCViewController.swift; path = VC/HanumanChalisaVCViewController.swift; sourceTree = SOURCE_ROOT; };
 		8B676EE21F8ADB2B006D28FE /* SriVishnuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SriVishnuViewController.swift; path = VC/SriVishnuViewController.swift; sourceTree = SOURCE_ROOT; };
 		8B676EE71F8ADB9B006D28FE /* SidebarMenu-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SidebarMenu-Bridging-Header.h"; sourceTree = "<group>"; };
+		8B676EE81F8ADCE4006D28FE /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		903B70411F7EBECA0045C2ED /* BhajagovindamVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BhajagovindamVC.swift; sourceTree = "<group>"; };
 		9F4B36C3FB3FC5FA9411BD73 /* Pods_SidebarMenuTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SidebarMenuTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47029F01A7F27DB00E30A3C /* SidebarMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SidebarMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -197,7 +197,6 @@
 				55CED9B31F7E737B00BD5365 /* Resources */,
 				F47029FC1A7F27DB00E30A3C /* Images.xcassets */,
 				8B676EE71F8ADB9B006D28FE /* SidebarMenu-Bridging-Header.h */,
-				8B676EBC1F8AD31E006D28FE /* GoogleService-Info.plist */,
 				F47029F31A7F27DB00E30A3C /* Supporting Files */,
 			);
 			path = SidebarMenu;
@@ -215,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				F4702A0B1A7F27DC00E30A3C /* SidebarMenuTests.swift */,
+				8B676EE81F8ADCE4006D28FE /* GoogleService-Info.plist */,
 				F4702A091A7F27DC00E30A3C /* Supporting Files */,
 			);
 			path = SidebarMenuTests;
