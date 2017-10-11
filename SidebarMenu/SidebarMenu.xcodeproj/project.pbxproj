@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		23E2A62A720D261283994B22 /* Pods_SidebarMenuTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F4B36C3FB3FC5FA9411BD73 /* Pods_SidebarMenuTests.framework */; };
-		7E0EB7DF5AC8CFC4795FC8B3 /* Pods_SidebarMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DD4EF82A6B02F13A55B7B3F /* Pods_SidebarMenu.framework */; };
-		8B676EC01F8AD391006D28FE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B676EBF1F8AD391006D28FE /* LoginViewController.swift */; };
+		3D422938C52EA40F9D13818D /* Pods_SidebarMenuTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 788B666FACA78460367709C5 /* Pods_SidebarMenuTests.framework */; };
 		8B676EC21F8AD775006D28FE /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B676EC11F8AD775006D28FE /* SafariServices.framework */; };
 		8B676EC41F8AD77A006D28FE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B676EC31F8AD77A006D28FE /* SystemConfiguration.framework */; };
 		8B676ED61F8ADADF006D28FE /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B676ED51F8ADADE006D28FE /* SWRevealViewController.m */; };
@@ -21,11 +19,19 @@
 		8B676EE41F8ADB2B006D28FE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B676EE01F8ADB2B006D28FE /* HomeViewController.swift */; };
 		8B676EE51F8ADB2B006D28FE /* HanumanChalisaVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B676EE11F8ADB2B006D28FE /* HanumanChalisaVCViewController.swift */; };
 		8B676EE61F8ADB2B006D28FE /* SriVishnuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B676EE21F8ADB2B006D28FE /* SriVishnuViewController.swift */; };
-		903B70421F7EBECA0045C2ED /* BhajagovindamVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903B70411F7EBECA0045C2ED /* BhajagovindamVC.swift */; };
+		8B9CFF4E1F8D4E2500235062 /* BhajagovindamVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9CFF4C1F8D4E2500235062 /* BhajagovindamVC.swift */; };
+		8B9CFF551F8D585200235062 /* BagawadgitaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9CFF541F8D585200235062 /* BagawadgitaViewController.swift */; };
+		8B9CFF581F8D65AE00235062 /* InAppBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9CFF571F8D65AE00235062 /* InAppBrowserViewController.swift */; };
+		8B9CFF591F8D65AE00235062 /* InAppBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9CFF571F8D65AE00235062 /* InAppBrowserViewController.swift */; };
+		8B9CFF5B1F8D939F00235062 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B9CFF5A1F8D939F00235062 /* Storyboard.storyboard */; };
+		8B9CFF5C1F8D939F00235062 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B9CFF5A1F8D939F00235062 /* Storyboard.storyboard */; };
+		8B9CFF5F1F8D93D600235062 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B9CFF5D1F8D93D600235062 /* Main.storyboard */; };
+		8B9CFF601F8D93D600235062 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B9CFF5D1F8D93D600235062 /* Main.storyboard */; };
+		8B9CFF611F8D93D600235062 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B9CFF5E1F8D93D600235062 /* LaunchScreen.xib */; };
+		8B9CFF621F8D93D600235062 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B9CFF5E1F8D93D600235062 /* LaunchScreen.xib */; };
+		E8E88D89A934796CC6536145 /* Pods_SidebarMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D318AB2A8313C069345AD87 /* Pods_SidebarMenu.framework */; };
 		F47029F61A7F27DB00E30A3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47029F51A7F27DB00E30A3C /* AppDelegate.swift */; };
-		F47029FB1A7F27DB00E30A3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47029F91A7F27DB00E30A3C /* Main.storyboard */; };
 		F47029FD1A7F27DB00E30A3C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F47029FC1A7F27DB00E30A3C /* Images.xcassets */; };
-		F4702A001A7F27DC00E30A3C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F47029FE1A7F27DB00E30A3C /* LaunchScreen.xib */; };
 		F4702A0C1A7F27DC00E30A3C /* SidebarMenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4702A0B1A7F27DC00E30A3C /* SidebarMenuTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,11 +46,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3461C9FB959F5C415ACD6A92 /* Pods-SidebarMenuTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SidebarMenuTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SidebarMenuTests/Pods-SidebarMenuTests.debug.xcconfig"; sourceTree = "<group>"; };
-		3B2D69C8A6CA7833CCD3289C /* Pods-SidebarMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SidebarMenu.release.xcconfig"; path = "Pods/Target Support Files/Pods-SidebarMenu/Pods-SidebarMenu.release.xcconfig"; sourceTree = "<group>"; };
-		6DD4EF82A6B02F13A55B7B3F /* Pods_SidebarMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SidebarMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7481C8840FE71F970EF16D47 /* Pods-SidebarMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SidebarMenu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SidebarMenu/Pods-SidebarMenu.debug.xcconfig"; sourceTree = "<group>"; };
-		8B676EBF1F8AD391006D28FE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Login/LoginViewController.swift; sourceTree = SOURCE_ROOT; };
+		33A982571F58E1A054755575 /* Pods-SidebarMenuTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SidebarMenuTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SidebarMenuTests/Pods-SidebarMenuTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7033E73D8821C5E840441B5A /* Pods-SidebarMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SidebarMenu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SidebarMenu/Pods-SidebarMenu.debug.xcconfig"; sourceTree = "<group>"; };
+		788B666FACA78460367709C5 /* Pods_SidebarMenuTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SidebarMenuTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D318AB2A8313C069345AD87 /* Pods_SidebarMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SidebarMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B676EC11F8AD775006D28FE /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		8B676EC31F8AD77A006D28FE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		8B676ED41F8ADADE006D28FE /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = ExternalFramework/SWRevealViewController.h; sourceTree = SOURCE_ROOT; };
@@ -58,19 +63,22 @@
 		8B676EE11F8ADB2B006D28FE /* HanumanChalisaVCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HanumanChalisaVCViewController.swift; path = VC/HanumanChalisaVCViewController.swift; sourceTree = SOURCE_ROOT; };
 		8B676EE21F8ADB2B006D28FE /* SriVishnuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SriVishnuViewController.swift; path = VC/SriVishnuViewController.swift; sourceTree = SOURCE_ROOT; };
 		8B676EE71F8ADB9B006D28FE /* SidebarMenu-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SidebarMenu-Bridging-Header.h"; sourceTree = "<group>"; };
-		8B676EE81F8ADCE4006D28FE /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		903B70411F7EBECA0045C2ED /* BhajagovindamVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BhajagovindamVC.swift; sourceTree = "<group>"; };
-		9F4B36C3FB3FC5FA9411BD73 /* Pods_SidebarMenuTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SidebarMenuTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B9CFF4C1F8D4E2500235062 /* BhajagovindamVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BhajagovindamVC.swift; path = VC/BhajagovindamVC.swift; sourceTree = SOURCE_ROOT; };
+		8B9CFF541F8D585200235062 /* BagawadgitaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BagawadgitaViewController.swift; sourceTree = "<group>"; };
+		8B9CFF561F8D5E8200235062 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8B9CFF571F8D65AE00235062 /* InAppBrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InAppBrowserViewController.swift; path = VC/InAppBrowserViewController.swift; sourceTree = SOURCE_ROOT; };
+		8B9CFF5A1F8D939F00235062 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Storyboard.storyboard; path = StoryBoard/Storyboard.storyboard; sourceTree = SOURCE_ROOT; };
+		8B9CFF5D1F8D93D600235062 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = StoryBoard/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		8B9CFF5E1F8D93D600235062 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LaunchScreen.xib; path = StoryBoard/LaunchScreen.xib; sourceTree = SOURCE_ROOT; };
+		A47ADFAD231AA206647EC063 /* Pods-SidebarMenuTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SidebarMenuTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SidebarMenuTests/Pods-SidebarMenuTests.release.xcconfig"; sourceTree = "<group>"; };
+		EC4DF6AE8B96FE77510C85D4 /* Pods-SidebarMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SidebarMenu.release.xcconfig"; path = "Pods/Target Support Files/Pods-SidebarMenu/Pods-SidebarMenu.release.xcconfig"; sourceTree = "<group>"; };
 		F47029F01A7F27DB00E30A3C /* SidebarMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SidebarMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47029F41A7F27DB00E30A3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F47029F51A7F27DB00E30A3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F47029FA1A7F27DB00E30A3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F47029FC1A7F27DB00E30A3C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		F47029FF1A7F27DB00E30A3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F4702A051A7F27DC00E30A3C /* SidebarMenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SidebarMenuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4702A0A1A7F27DC00E30A3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4702A0B1A7F27DC00E30A3C /* SidebarMenuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarMenuTests.swift; sourceTree = "<group>"; };
-		FE032A366BBF9EBE92425CA6 /* Pods-SidebarMenuTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SidebarMenuTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SidebarMenuTests/Pods-SidebarMenuTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +88,7 @@
 			files = (
 				8B676EC41F8AD77A006D28FE /* SystemConfiguration.framework in Frameworks */,
 				8B676EC21F8AD775006D28FE /* SafariServices.framework in Frameworks */,
-				7E0EB7DF5AC8CFC4795FC8B3 /* Pods_SidebarMenu.framework in Frameworks */,
+				E8E88D89A934796CC6536145 /* Pods_SidebarMenu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23E2A62A720D261283994B22 /* Pods_SidebarMenuTests.framework in Frameworks */,
+				3D422938C52EA40F9D13818D /* Pods_SidebarMenuTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,16 +119,26 @@
 			children = (
 				8B676EC31F8AD77A006D28FE /* SystemConfiguration.framework */,
 				8B676EC11F8AD775006D28FE /* SafariServices.framework */,
-				6DD4EF82A6B02F13A55B7B3F /* Pods_SidebarMenu.framework */,
-				9F4B36C3FB3FC5FA9411BD73 /* Pods_SidebarMenuTests.framework */,
+				7D318AB2A8313C069345AD87 /* Pods_SidebarMenu.framework */,
+				788B666FACA78460367709C5 /* Pods_SidebarMenuTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		894467E48BA2617A36CBC211 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7033E73D8821C5E840441B5A /* Pods-SidebarMenu.debug.xcconfig */,
+				EC4DF6AE8B96FE77510C85D4 /* Pods-SidebarMenu.release.xcconfig */,
+				33A982571F58E1A054755575 /* Pods-SidebarMenuTests.debug.xcconfig */,
+				A47ADFAD231AA206647EC063 /* Pods-SidebarMenuTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		8B676EBE1F8AD37B006D28FE /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				8B676EBF1F8AD391006D28FE /* LoginViewController.swift */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -128,11 +146,14 @@
 		8B676ED11F8AD9A4006D28FE /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				8B676EBE1F8AD37B006D28FE /* Login */,
+				8B9CFF4C1F8D4E2500235062 /* BhajagovindamVC.swift */,
+				8B9CFF571F8D65AE00235062 /* InAppBrowserViewController.swift */,
 				8B676EE11F8ADB2B006D28FE /* HanumanChalisaVCViewController.swift */,
+				8B9CFF541F8D585200235062 /* BagawadgitaViewController.swift */,
 				8B676EE01F8ADB2B006D28FE /* HomeViewController.swift */,
 				8B676EDF1F8ADB2B006D28FE /* MenuController.swift */,
 				8B676EE21F8ADB2B006D28FE /* SriVishnuViewController.swift */,
-				903B70411F7EBECA0045C2ED /* BhajagovindamVC.swift */,
 			);
 			name = VC;
 			sourceTree = "<group>";
@@ -140,8 +161,9 @@
 		8B676ED21F8AD9CA006D28FE /* StoryBoard */ = {
 			isa = PBXGroup;
 			children = (
-				F47029F91A7F27DB00E30A3C /* Main.storyboard */,
-				F47029FE1A7F27DB00E30A3C /* LaunchScreen.xib */,
+				8B9CFF5E1F8D93D600235062 /* LaunchScreen.xib */,
+				8B9CFF5D1F8D93D600235062 /* Main.storyboard */,
+				8B9CFF5A1F8D939F00235062 /* Storyboard.storyboard */,
 			);
 			name = StoryBoard;
 			sourceTree = "<group>";
@@ -155,25 +177,14 @@
 			name = ExternalFramework;
 			sourceTree = "<group>";
 		};
-		A10A9F3BA6ACFA11FF71F52A /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				7481C8840FE71F970EF16D47 /* Pods-SidebarMenu.debug.xcconfig */,
-				3B2D69C8A6CA7833CCD3289C /* Pods-SidebarMenu.release.xcconfig */,
-				3461C9FB959F5C415ACD6A92 /* Pods-SidebarMenuTests.debug.xcconfig */,
-				FE032A366BBF9EBE92425CA6 /* Pods-SidebarMenuTests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		F47029E71A7F27DB00E30A3C = {
 			isa = PBXGroup;
 			children = (
 				F47029F21A7F27DB00E30A3C /* SidebarMenu */,
 				F4702A081A7F27DC00E30A3C /* SidebarMenuTests */,
 				F47029F11A7F27DB00E30A3C /* Products */,
-				A10A9F3BA6ACFA11FF71F52A /* Pods */,
 				753302474B62A705C51471DA /* Frameworks */,
+				894467E48BA2617A36CBC211 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -189,14 +200,14 @@
 		F47029F21A7F27DB00E30A3C /* SidebarMenu */ = {
 			isa = PBXGroup;
 			children = (
+				F47029F51A7F27DB00E30A3C /* AppDelegate.swift */,
 				8B676ED31F8AD9ED006D28FE /* ExternalFramework */,
 				8B676ED21F8AD9CA006D28FE /* StoryBoard */,
-				F47029F51A7F27DB00E30A3C /* AppDelegate.swift */,
 				8B676ED11F8AD9A4006D28FE /* VC */,
-				8B676EBE1F8AD37B006D28FE /* Login */,
 				55CED9B31F7E737B00BD5365 /* Resources */,
 				F47029FC1A7F27DB00E30A3C /* Images.xcassets */,
 				8B676EE71F8ADB9B006D28FE /* SidebarMenu-Bridging-Header.h */,
+				8B9CFF561F8D5E8200235062 /* GoogleService-Info.plist */,
 				F47029F31A7F27DB00E30A3C /* Supporting Files */,
 			);
 			path = SidebarMenu;
@@ -214,7 +225,6 @@
 			isa = PBXGroup;
 			children = (
 				F4702A0B1A7F27DC00E30A3C /* SidebarMenuTests.swift */,
-				8B676EE81F8ADCE4006D28FE /* GoogleService-Info.plist */,
 				F4702A091A7F27DC00E30A3C /* Supporting Files */,
 			);
 			path = SidebarMenuTests;
@@ -323,11 +333,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B9CFF5F1F8D93D600235062 /* Main.storyboard in Resources */,
 				8B676EDB1F8ADB0C006D28FE /* gita-big.pdf in Resources */,
 				8B676EDC1F8ADB0C006D28FE /* bhajagovindham.pdf in Resources */,
-				F47029FB1A7F27DB00E30A3C /* Main.storyboard in Resources */,
-				F4702A001A7F27DC00E30A3C /* LaunchScreen.xib in Resources */,
 				8B676EDE1F8ADB0C006D28FE /* Sri_Vishnu.pdf in Resources */,
+				8B9CFF611F8D93D600235062 /* LaunchScreen.xib in Resources */,
+				8B9CFF5B1F8D939F00235062 /* Storyboard.storyboard in Resources */,
 				F47029FD1A7F27DB00E30A3C /* Images.xcassets in Resources */,
 				8B676EDD1F8ADB0C006D28FE /* Sri_Hanuman_Chalisa_Hindi.pdf in Resources */,
 			);
@@ -337,6 +348,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B9CFF5C1F8D939F00235062 /* Storyboard.storyboard in Resources */,
+				8B9CFF621F8D93D600235062 /* LaunchScreen.xib in Resources */,
+				8B9CFF601F8D93D600235062 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,10 +475,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B676EE31F8ADB2B006D28FE /* MenuController.swift in Sources */,
-				8B676EC01F8AD391006D28FE /* LoginViewController.swift in Sources */,
 				8B676EE61F8ADB2B006D28FE /* SriVishnuViewController.swift in Sources */,
+				8B9CFF551F8D585200235062 /* BagawadgitaViewController.swift in Sources */,
+				8B9CFF581F8D65AE00235062 /* InAppBrowserViewController.swift in Sources */,
 				F47029F61A7F27DB00E30A3C /* AppDelegate.swift in Sources */,
-				903B70421F7EBECA0045C2ED /* BhajagovindamVC.swift in Sources */,
+				8B9CFF4E1F8D4E2500235062 /* BhajagovindamVC.swift in Sources */,
 				8B676EE51F8ADB2B006D28FE /* HanumanChalisaVCViewController.swift in Sources */,
 				8B676ED61F8ADADF006D28FE /* SWRevealViewController.m in Sources */,
 				8B676EE41F8ADB2B006D28FE /* HomeViewController.swift in Sources */,
@@ -475,6 +490,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B9CFF591F8D65AE00235062 /* InAppBrowserViewController.swift in Sources */,
 				F4702A0C1A7F27DC00E30A3C /* SidebarMenuTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,25 +504,6 @@
 			targetProxy = F4702A061A7F27DC00E30A3C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		F47029F91A7F27DB00E30A3C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F47029FA1A7F27DB00E30A3C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F47029FE1A7F27DB00E30A3C /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F47029FF1A7F27DB00E30A3C /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F4702A0D1A7F27DC00E30A3C /* Debug */ = {
@@ -589,7 +586,7 @@
 		};
 		F4702A101A7F27DC00E30A3C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7481C8840FE71F970EF16D47 /* Pods-SidebarMenu.debug.xcconfig */;
+			baseConfigurationReference = 7033E73D8821C5E840441B5A /* Pods-SidebarMenu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -658,7 +655,7 @@
 		};
 		F4702A111A7F27DC00E30A3C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B2D69C8A6CA7833CCD3289C /* Pods-SidebarMenu.release.xcconfig */;
+			baseConfigurationReference = EC4DF6AE8B96FE77510C85D4 /* Pods-SidebarMenu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -726,7 +723,7 @@
 		};
 		F4702A131A7F27DC00E30A3C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3461C9FB959F5C415ACD6A92 /* Pods-SidebarMenuTests.debug.xcconfig */;
+			baseConfigurationReference = 33A982571F58E1A054755575 /* Pods-SidebarMenuTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -748,7 +745,7 @@
 		};
 		F4702A141A7F27DC00E30A3C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE032A366BBF9EBE92425CA6 /* Pods-SidebarMenuTests.release.xcconfig */;
+			baseConfigurationReference = A47ADFAD231AA206647EC063 /* Pods-SidebarMenuTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (

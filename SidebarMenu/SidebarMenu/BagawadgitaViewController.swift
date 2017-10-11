@@ -1,5 +1,5 @@
 //
-//  HanumanChalisaVCViewController.swift
+//  BagawadgitaViewController.swift
 //  SidebarMenu
 //
 //  Created by Sivarama Arepu on 29/09/17.
@@ -9,19 +9,21 @@
 import UIKit
 import WebKit
 
-class HanumanChalisaVCViewController: UIViewController
-{
+class BagawadgitaViewController: UIViewController {
     @IBOutlet weak var menuButton:UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         if self.revealViewController() != nil {
             menuButton.target = self.revealViewController()
             menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
+        
         self.loadPdf()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -29,7 +31,7 @@ class HanumanChalisaVCViewController: UIViewController
     
     //Load Pdf
     func loadPdf() {
-        if let pdfURL = Bundle.main.url(forResource: "Sri_Hanuman_Chalisa_Hindi", withExtension: "pdf", subdirectory: nil, localization: nil)  {
+        if let pdfURL = Bundle.main.url(forResource: "gita-big", withExtension: "pdf", subdirectory: nil, localization: nil)  {
             do {
                 let data = try Data(contentsOf: pdfURL)
                 let webView = WKWebView(frame: CGRect(x:20,y:20,width:view.frame.size.width-40, height:view.frame.size.height-40))
@@ -47,5 +49,7 @@ class HanumanChalisaVCViewController: UIViewController
             }
         }
     }
-
+    
+    
 }
+
