@@ -5,7 +5,7 @@ import UIKit
 class MenuController: UIViewController,UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var featuresTableView: UITableView!
 
-    var featuresList: [String] = ["Home","About TCSNI","Bajana","Donate to Balaji","Daily Balaji Sevas","Contact US","Share"]
+    var featuresList: [String] = ["HOME","TCSNI","PDF","DONATE","SEVAS","CONTACT","SHARE"]
     override func viewDidLoad() {
         super.viewDidLoad()
 
