@@ -45,8 +45,7 @@ class DocumentsViewController: UIViewController,UITableViewDelegate, UITableView
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
        
 
-        //cell.imageView?.image = UIImage(named:documentImageList[indexPath.row])
-        cell.imageView?.image = UIImage(named:"SideIcon")
+        cell.imageView?.image = UIImage(named:"balajiSymbol")
         cell.textLabel?.text = documentsList[indexPath.row]
         cell.detailTextLabel?.text = originallyWrittenBy[indexPath.row]
         return cell
