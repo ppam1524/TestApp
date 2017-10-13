@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3D422938C52EA40F9D13818D /* Pods_SidebarMenuTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 788B666FACA78460367709C5 /* Pods_SidebarMenuTests.framework */; };
+		8B0D9C0A1F90562100D241E9 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0D9C081F90562000D241E9 /* MenuController.swift */; };
+		8B0D9C0B1F90562100D241E9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0D9C091F90562000D241E9 /* HomeViewController.swift */; };
 		8B676EC21F8AD775006D28FE /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B676EC11F8AD775006D28FE /* SafariServices.framework */; };
 		8B676EC41F8AD77A006D28FE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B676EC31F8AD77A006D28FE /* SystemConfiguration.framework */; };
 		8B676ED61F8ADADF006D28FE /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B676ED51F8ADADE006D28FE /* SWRevealViewController.m */; };
@@ -15,14 +17,8 @@
 		8B676EDC1F8ADB0C006D28FE /* bhajagovindham.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8B676ED81F8ADB0C006D28FE /* bhajagovindham.pdf */; };
 		8B676EDD1F8ADB0C006D28FE /* Sri_Hanuman_Chalisa_Hindi.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8B676ED91F8ADB0C006D28FE /* Sri_Hanuman_Chalisa_Hindi.pdf */; };
 		8B676EDE1F8ADB0C006D28FE /* Sri_Vishnu.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8B676EDA1F8ADB0C006D28FE /* Sri_Vishnu.pdf */; };
-		8B676EE31F8ADB2B006D28FE /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B676EDF1F8ADB2B006D28FE /* MenuController.swift */; };
-		8B676EE41F8ADB2B006D28FE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B676EE01F8ADB2B006D28FE /* HomeViewController.swift */; };
-		8B676EE51F8ADB2B006D28FE /* HanumanChalisaVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B676EE11F8ADB2B006D28FE /* HanumanChalisaVCViewController.swift */; };
-		8B676EE61F8ADB2B006D28FE /* SriVishnuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B676EE21F8ADB2B006D28FE /* SriVishnuViewController.swift */; };
 		8B6E587C1F9034BB00A02971 /* DocumentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6E587B1F9034BB00A02971 /* DocumentsViewController.swift */; };
 		8B6E587D1F9034BB00A02971 /* DocumentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6E587B1F9034BB00A02971 /* DocumentsViewController.swift */; };
-		8B9CFF4E1F8D4E2500235062 /* BhajagovindamVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9CFF4C1F8D4E2500235062 /* BhajagovindamVC.swift */; };
-		8B9CFF551F8D585200235062 /* BagawadgitaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9CFF541F8D585200235062 /* BagawadgitaViewController.swift */; };
 		8B9CFF5B1F8D939F00235062 /* Documents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B9CFF5A1F8D939F00235062 /* Documents.storyboard */; };
 		8B9CFF5C1F8D939F00235062 /* Documents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B9CFF5A1F8D939F00235062 /* Documents.storyboard */; };
 		8B9CFF5F1F8D93D600235062 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B9CFF5D1F8D93D600235062 /* Main.storyboard */; };
@@ -50,6 +46,8 @@
 		7033E73D8821C5E840441B5A /* Pods-SidebarMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SidebarMenu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SidebarMenu/Pods-SidebarMenu.debug.xcconfig"; sourceTree = "<group>"; };
 		788B666FACA78460367709C5 /* Pods_SidebarMenuTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SidebarMenuTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D318AB2A8313C069345AD87 /* Pods_SidebarMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SidebarMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B0D9C081F90562000D241E9 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuController.swift; path = VC/Main/MenuController.swift; sourceTree = SOURCE_ROOT; };
+		8B0D9C091F90562000D241E9 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = VC/Main/HomeViewController.swift; sourceTree = SOURCE_ROOT; };
 		8B676EC11F8AD775006D28FE /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		8B676EC31F8AD77A006D28FE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		8B676ED41F8ADADE006D28FE /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = ExternalFramework/SWRevealViewController.h; sourceTree = SOURCE_ROOT; };
@@ -58,14 +56,8 @@
 		8B676ED81F8ADB0C006D28FE /* bhajagovindham.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = bhajagovindham.pdf; path = Resources/bhajagovindham.pdf; sourceTree = SOURCE_ROOT; };
 		8B676ED91F8ADB0C006D28FE /* Sri_Hanuman_Chalisa_Hindi.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Sri_Hanuman_Chalisa_Hindi.pdf; path = Resources/Sri_Hanuman_Chalisa_Hindi.pdf; sourceTree = SOURCE_ROOT; };
 		8B676EDA1F8ADB0C006D28FE /* Sri_Vishnu.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Sri_Vishnu.pdf; path = Resources/Sri_Vishnu.pdf; sourceTree = SOURCE_ROOT; };
-		8B676EDF1F8ADB2B006D28FE /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuController.swift; path = VC/MenuController.swift; sourceTree = SOURCE_ROOT; };
-		8B676EE01F8ADB2B006D28FE /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = VC/HomeViewController.swift; sourceTree = SOURCE_ROOT; };
-		8B676EE11F8ADB2B006D28FE /* HanumanChalisaVCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HanumanChalisaVCViewController.swift; path = VC/HanumanChalisaVCViewController.swift; sourceTree = SOURCE_ROOT; };
-		8B676EE21F8ADB2B006D28FE /* SriVishnuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SriVishnuViewController.swift; path = VC/SriVishnuViewController.swift; sourceTree = SOURCE_ROOT; };
 		8B676EE71F8ADB9B006D28FE /* SidebarMenu-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SidebarMenu-Bridging-Header.h"; sourceTree = "<group>"; };
 		8B6E587B1F9034BB00A02971 /* DocumentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DocumentsViewController.swift; path = VC/Documents/DocumentsViewController.swift; sourceTree = SOURCE_ROOT; };
-		8B9CFF4C1F8D4E2500235062 /* BhajagovindamVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BhajagovindamVC.swift; path = VC/BhajagovindamVC.swift; sourceTree = SOURCE_ROOT; };
-		8B9CFF541F8D585200235062 /* BagawadgitaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BagawadgitaViewController.swift; sourceTree = "<group>"; };
 		8B9CFF561F8D5E8200235062 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8B9CFF5A1F8D939F00235062 /* Documents.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Documents.storyboard; path = StoryBoard/Documents.storyboard; sourceTree = SOURCE_ROOT; };
 		8B9CFF5D1F8D93D600235062 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = StoryBoard/Main.storyboard; sourceTree = SOURCE_ROOT; };
@@ -136,6 +128,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		8B0D9C031F9055CD00D241E9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8B0D9C091F90562000D241E9 /* HomeViewController.swift */,
+				8B0D9C081F90562000D241E9 /* MenuController.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
 		8B676EBE1F8AD37B006D28FE /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,14 +147,9 @@
 		8B676ED11F8AD9A4006D28FE /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				8B0D9C031F9055CD00D241E9 /* Main */,
 				8B6E587A1F90346700A02971 /* Documents */,
 				8B676EBE1F8AD37B006D28FE /* Login */,
-				8B9CFF4C1F8D4E2500235062 /* BhajagovindamVC.swift */,
-				8B676EE11F8ADB2B006D28FE /* HanumanChalisaVCViewController.swift */,
-				8B9CFF541F8D585200235062 /* BagawadgitaViewController.swift */,
-				8B676EE01F8ADB2B006D28FE /* HomeViewController.swift */,
-				8B676EDF1F8ADB2B006D28FE /* MenuController.swift */,
-				8B676EE21F8ADB2B006D28FE /* SriVishnuViewController.swift */,
 			);
 			name = VC;
 			sourceTree = "<group>";
@@ -482,15 +478,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B676EE31F8ADB2B006D28FE /* MenuController.swift in Sources */,
-				8B676EE61F8ADB2B006D28FE /* SriVishnuViewController.swift in Sources */,
-				8B9CFF551F8D585200235062 /* BagawadgitaViewController.swift in Sources */,
+				8B0D9C0B1F90562100D241E9 /* HomeViewController.swift in Sources */,
+				8B0D9C0A1F90562100D241E9 /* MenuController.swift in Sources */,
 				F47029F61A7F27DB00E30A3C /* AppDelegate.swift in Sources */,
 				8B6E587C1F9034BB00A02971 /* DocumentsViewController.swift in Sources */,
-				8B9CFF4E1F8D4E2500235062 /* BhajagovindamVC.swift in Sources */,
-				8B676EE51F8ADB2B006D28FE /* HanumanChalisaVCViewController.swift in Sources */,
 				8B676ED61F8ADADF006D28FE /* SWRevealViewController.m in Sources */,
-				8B676EE41F8ADB2B006D28FE /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
