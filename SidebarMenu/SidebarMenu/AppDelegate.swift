@@ -3,12 +3,15 @@
 import UIKit
 import Firebase
 import GoogleSignIn
-
+//#import <AVFoundation/AVFoundation.h>
+import AVFoundation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     
     var window: UIWindow?
+    var audioPlayer: AVAudioPlayer?
+    
 
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         
@@ -18,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         //FirebaseApp.configure()
         
         
-
+        //playSong(song: "OM")
         // Initialize sign-in
         return true
     }
@@ -46,6 +49,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    func playSong(song: NSString) -> Void
+    {
+        guard let url = Bundle.main.url(forResource: "OM", withExtension: "mp3") else {
+            print("url not found")
+            return
+        }
+        
+        
+        do {
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+            try AVAudioSession.sharedInstance().setActive(true)
+            
+            self.audioPlayer = try AVAudioPlayer(contentsOf: url)
+            guard let player = self.audioPlayer else { return }
+            
+            player.play()
+        } catch let error {
+            print(error.localizedDescription)
+        }
+        
+    }
 }
 
