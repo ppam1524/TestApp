@@ -5,15 +5,10 @@ import UIKit
 class MenuController: UIViewController,UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var featuresTableView: UITableView!
 
-    var featuresList: [String] = ["HOME","TCSNI","PDF","DONATE","SEVAS","CONTACT","SHARE"]
+    var featuresList: [String] = ["HOME","TCSNI","❋❋DOCUMENTS❋❋","DONATE","SEVAS","CONTACT","SHARE"]
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,18 +33,51 @@ class MenuController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         return cell
     }
     
-//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-//
-//        // Configure the cell...
-//
-//        return cell
-//    }
-//
-//    @nonobjc func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-//
-//    }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if (indexPath.row == 0)
+        {
+            self.revealViewController().revealToggle(animated: true)
+        }else if(indexPath.row == 1)
+        {
+            let alert = UIAlertController(title: "Alert", message: "\(featuresList [indexPath.row]) cliked", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+        else if(indexPath.row == 2)
+        {
+            let storyboard = UIStoryboard(name: "Documents", bundle: nil)
+            let controller = storyboard.instantiateViewController(withIdentifier: "DocumentsViewControllerID")
+            self.present(controller, animated: true, completion: nil)
+            
+            let alert = UIAlertController(title: "Alert", message: "\(featuresList [indexPath.row]) cliked", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+        else if(indexPath.row == 3)
+        {
+            let alert = UIAlertController(title: "Alert", message: "\(featuresList [indexPath.row]) cliked", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+        else if(indexPath.row == 4)
+        {
+            let alert = UIAlertController(title: "Alert", message: "\(featuresList [indexPath.row]) cliked", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+        else if(indexPath.row == 5)
+        {
+            let alert = UIAlertController(title: "Alert", message: "\(featuresList [indexPath.row]) cliked", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        } else if(indexPath.row == 6)
+        {
+            let alert = UIAlertController(title: "Alert", message: "\(featuresList [indexPath.row]) cliked", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+    }
     // MARK: - Table view data source
 
 

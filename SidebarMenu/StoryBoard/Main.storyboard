@@ -10,8 +10,10 @@
     </dependencies>
     <customFonts key="customFonts">
         <array key="HelveticaNeue.ttc">
-            <string>HelveticaNeue</string>
             <string>HelveticaNeue-Bold</string>
+        </array>
+        <array key="OriyaSangamMN.ttc">
+            <string>OriyaSangamMN</string>
         </array>
     </customFonts>
     <scenes>
@@ -106,9 +108,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to our app" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEb-Vw-Q3c">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="balajiSwami" translatesAutoresizingMaskIntoConstraints="NO" id="nZf-Gm-8xx">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="GJa-ov-GWu"/>
+                                    <constraint firstAttribute="width" constant="375" id="koH-o3-xPZ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🎄Om Namo Venkatesa🎄" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEb-Vw-Q3c">
+                                <rect key="frame" x="0.0" y="617" width="375" height="42"/>
+                                <fontDescription key="fontDescription" name="OriyaSangamMN" family="Oriya Sangam MN" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -117,8 +126,10 @@
                         <constraints>
                             <constraint firstItem="lEb-Vw-Q3c" firstAttribute="leading" secondItem="fXV-zy-5p8" secondAttribute="leading" id="HtV-mQ-BfV"/>
                             <constraint firstAttribute="trailing" secondItem="lEb-Vw-Q3c" secondAttribute="trailing" id="Vbg-Bk-XeZ"/>
-                            <constraint firstItem="5Om-Kj-1Mx" firstAttribute="top" secondItem="lEb-Vw-Q3c" secondAttribute="bottom" id="pan-mu-ORA"/>
-                            <constraint firstItem="lEb-Vw-Q3c" firstAttribute="top" secondItem="VhL-lq-hTc" secondAttribute="bottom" id="wkB-6c-VyM"/>
+                            <constraint firstItem="5Om-Kj-1Mx" firstAttribute="top" secondItem="lEb-Vw-Q3c" secondAttribute="bottom" constant="8" id="jNZ-rm-tzM"/>
+                            <constraint firstItem="nZf-Gm-8xx" firstAttribute="centerY" secondItem="fXV-zy-5p8" secondAttribute="centerY" id="mB8-Wf-iOh"/>
+                            <constraint firstItem="5Om-Kj-1Mx" firstAttribute="top" secondItem="nZf-Gm-8xx" secondAttribute="bottom" id="n1J-Rn-WlX"/>
+                            <constraint firstItem="nZf-Gm-8xx" firstAttribute="centerX" secondItem="fXV-zy-5p8" secondAttribute="centerX" id="wIi-4z-4t2"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="kLs-Aw-k51">
@@ -130,7 +141,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4j1-QU-pnv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2284" y="-656"/>
+            <point key="canvasLocation" x="2284" y="-656.22188905547227"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="W3Q-6h-cff">
@@ -152,6 +163,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="balajiSwami" width="480" height="800"/>
         <image name="menu" width="22" height="22"/>
     </resources>
 </document>
