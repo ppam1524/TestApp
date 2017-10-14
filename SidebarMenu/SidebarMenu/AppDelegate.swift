@@ -1,9 +1,6 @@
-
-
 import UIKit
 import Firebase
 import GoogleSignIn
-//#import <AVFoundation/AVFoundation.h>
 import AVFoundation
 
 @UIApplicationMain
@@ -11,6 +8,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     
     var window: UIWindow?
     var audioPlayer: AVAudioPlayer?
+    
     
 
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
@@ -22,7 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         
         
         //playSong(song: "OM")
-        // Initialize sign-in
+        playSong(song: "OM")
+        
         return true
     }
 
@@ -51,24 +50,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
 
     func playSong(song: NSString) -> Void
     {
-        guard let url = Bundle.main.url(forResource: "OM", withExtension: "mp3") else {
-            print("url not found")
-            return
+        //Check filepath exits or not.
+        if let filePaths = Bundle.main.path(forResource: "OM", ofType: "mp3")
+        {
+            do{
+                audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: filePaths))
+                
+                audioPlayer?.prepareToPlay()
+                
+                let audioSession =  AVAudioSession.sharedInstance()
+                do{
+                    try audioSession.setCategory(AVAudioSessionCategoryPlayback)
+                }
+                catch{
+                    
+                }
+            }catch
+            {
+                print("Error")
+            }
+            audioPlayer?.play()
         }
-        
-        
-        do {
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
-            try AVAudioSession.sharedInstance().setActive(true)
-            
-            self.audioPlayer = try AVAudioPlayer(contentsOf: url)
-            guard let player = self.audioPlayer else { return }
-            
-            player.play()
-        } catch let error {
-            print(error.localizedDescription)
-        }
-        
     }
 }
 
