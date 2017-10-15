@@ -15,18 +15,24 @@ class DocumentsViewController: UIViewController,UITableViewDelegate, UITableView
     @IBOutlet weak var pdfBGView: UIView!
     @IBOutlet weak var documentsTableView: UITableView!
 
-   
+    @IBOutlet weak var menuButton:UIBarButtonItem!
+
     
     var documentsList: [String] = ["Bhajagovindam","HanumanChalisa","Bagawadgita","SriVishnu"]
     
     var documentsName: [String] = ["bhajagovindham","Sri_Hanuman_Chalisa_Hindi","gita-big","Sri_Vishnu"]
     
-     var originallyWrittenBy: [String] = ["❁Originally written by 'Adi Shankara'❁","❁Originally written by 'Tulsidas'❁","❁Originally written by 'Sage Vyasa'❁","❁Originally written by 'Yudhisthira'❁"]
+     var originallyWrittenBy: [String] = ["Originally written by 'Adi Shankara'","Originally written by 'Tulsidas'","Originally written by 'Sage Vyasa'","Originally written by 'Yudhisthira'"]
     
     var documentImageList: [String] = ["Bhajagovindam","Hanuman","Gita","SriVishnu"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if self.revealViewController() != nil {
+            menuButton.target = self.revealViewController()
+            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        }
         self.pdfBGView.isHidden = true
     }
     
@@ -45,9 +51,16 @@ class DocumentsViewController: UIViewController,UITableViewDelegate, UITableView
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
        
 
-        cell.imageView?.image = UIImage(named:"balajiSymbol")
-        cell.textLabel?.text = documentsList[indexPath.row]
+       // cell.imageView?.image = UIImage(named:"balajiSymbol")
+        cell.textLabel?.text = "❁   \(documentsList[indexPath.row])"
         cell.detailTextLabel?.text = originallyWrittenBy[indexPath.row]
+        
+        cell.textLabel?.backgroundColor = UIColor.clear
+        
+        cell.contentView.backgroundColor = UIColor.clear
+        documentsTableView.backgroundColor = UIColor.clear
+        cell.layer.backgroundColor = UIColor.clear.cgColor
+        
         return cell
     }
     
@@ -81,7 +94,7 @@ class DocumentsViewController: UIViewController,UITableViewDelegate, UITableView
         if let pdfURL = Bundle.main.url(forResource: pdfName, withExtension: "pdf", subdirectory: nil, localization: nil)  {
             do {
                 let data = try Data(contentsOf: pdfURL)
-                let webView = WKWebView(frame: CGRect(x:0,y:40,width:pdfBGView.frame.size.width, height:pdfBGView.frame.size.height-40))
+                let webView = WKWebView(frame: CGRect(x:0,y:0,width:pdfBGView.frame.size.width, height:pdfBGView.frame.size.height))
                 
                 if #available(iOS 9.0, *) {
                     webView.load(data, mimeType: "application/pdf", characterEncodingName:"", baseURL: pdfURL.deletingLastPathComponent())

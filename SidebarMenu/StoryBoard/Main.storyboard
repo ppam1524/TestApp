@@ -9,8 +9,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="HelveticaNeue.ttc">
-            <string>HelveticaNeue</string>
+        <array key="Kohinoor.ttc">
+            <string>KohinoorDevanagari-Regular</string>
+            <string>KohinoorDevanagari-Semibold</string>
         </array>
     </customFonts>
     <scenes>
@@ -80,37 +81,47 @@
                         <viewControllerLayoutGuide type="top" id="HhS-AL-aTk"/>
                         <viewControllerLayoutGuide type="bottom" id="KAI-Sw-Rsj"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="wwB-NO-E1r">
+                    <view key="view" alpha="0.59999999999999998" contentMode="scaleToFill" id="wwB-NO-E1r">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Balaji1" translatesAutoresizingMaskIntoConstraints="NO" id="kLb-cZ-O8r">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="19q-qx-UyL"/>
+                                    <constraint firstAttribute="height" constant="667" id="R00-uY-ov0"/>
+                                </constraints>
+                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LBH-Uo-D1u">
-                                <rect key="frame" x="0.0" y="101" width="375" height="566"/>
+                                <rect key="frame" x="0.0" y="108" width="375" height="559"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <string key="text">To identify and address social and cultural needs of Northern Ireland Indian Community in particular and Telugu people in general.  Telugu Cultural Society of Northern Ireland (or TCSNI, as it is well known) is of the biggest Telugu organization in Northern Ireland. This team was formed at a convention in Belfast in 2001 of Telugus from all over Northern Ireland and was incorporated in 2015 as a non--profit organization.  TCSNI aims to perpetuate, integrate, and assimilate the cultural heritage of the Telugu-speaking people into the mainstream of Northern Ireland. Telugu and Indian ethnic organizations around the world look up to TCSNI as a pioneer and role model for its various innovations in promoting culture and serving the community.  During its 14 years history, TCSNI has distinguished itself through its various activities in pursuit of its mission in Northern Ireland and India. It plays an important role in developing, nurturing, preserving and propagating arts specific to the Telugu people.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our Mission:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1k-mw-C2f">
-                                <rect key="frame" x="6" y="84" width="102" height="21"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <rect key="frame" x="6" y="84" width="117" height="28"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.60121468321917804" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="LBH-Uo-D1u" secondAttribute="trailing" id="04j-IR-KX7"/>
+                            <constraint firstItem="kLb-cZ-O8r" firstAttribute="centerX" secondItem="wwB-NO-E1r" secondAttribute="centerX" id="68E-LZ-Sgj"/>
                             <constraint firstItem="i1k-mw-C2f" firstAttribute="leading" secondItem="wwB-NO-E1r" secondAttribute="leading" constant="6" id="SHw-3Z-Bye"/>
                             <constraint firstItem="LBH-Uo-D1u" firstAttribute="top" secondItem="i1k-mw-C2f" secondAttribute="bottom" constant="-4" id="YUL-EK-dgf"/>
                             <constraint firstItem="LBH-Uo-D1u" firstAttribute="leading" secondItem="wwB-NO-E1r" secondAttribute="leading" id="Yur-Uv-rA5"/>
                             <constraint firstItem="i1k-mw-C2f" firstAttribute="top" secondItem="HhS-AL-aTk" secondAttribute="bottom" constant="20" id="lT4-A8-Qte"/>
                             <constraint firstItem="KAI-Sw-Rsj" firstAttribute="top" secondItem="LBH-Uo-D1u" secondAttribute="bottom" id="tJw-TZ-Lsr"/>
+                            <constraint firstItem="kLb-cZ-O8r" firstAttribute="centerY" secondItem="wwB-NO-E1r" secondAttribute="centerY" id="zpT-VZ-A7a"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="About TCSNI" id="BOu-6O-RXV">
-                        <barButtonItem key="leftBarButtonItem" image="menu" id="Pf6-zt-W3b">
+                    <navigationItem key="navigationItem" title="About TCSNI" largeTitleDisplayMode="always" id="BOu-6O-RXV">
+                        <barButtonItem key="leftBarButtonItem" image="GovindaNamam" id="Pf6-zt-W3b">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
                     </navigationItem>
@@ -154,6 +165,84 @@
             </objects>
             <point key="canvasLocation" x="695" y="2434"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="V4f-xC-LQX">
+            <objects>
+                <navigationController storyboardIdentifier="DonateNavigationVCID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aBl-3r-84M" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nbh-ML-4Pc">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="KpJ-O4-1Mj" kind="relationship" relationship="rootViewController" id="qcB-AT-BgK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CNJ-72-BoA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-17" y="3142"/>
+        </scene>
+        <!--Donations-->
+        <scene sceneID="ddo-eR-6P7">
+            <objects>
+                <viewController id="KpJ-O4-1Mj" customClass="DonateViewController" customModule="SidebarMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3KY-v3-P0Q"/>
+                        <viewControllerLayoutGuide type="bottom" id="Yd2-Uf-JgH"/>
+                    </layoutGuides>
+                    <view key="view" alpha="0.59999999999999998" contentMode="scaleToFill" id="tTr-wD-whG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.20000000298023224" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Balaji1" translatesAutoresizingMaskIntoConstraints="NO" id="QKr-Y5-5wa">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdO-lp-WJ7">
+                                <rect key="frame" x="35" y="108" width="304" height="84"/>
+                                <string key="text">Please transfer your donation to the following account 
+</string>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OuA-rL-Ua1">
+                                <rect key="frame" x="35" y="215" width="304" height="356"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <string key="text">Bank Name : HSBC 
+Bank Holder Name : Telugu Cultural Society of NI 
+Sort code : 40-20-55 
+Bank Account : 10214361</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.60121468320000004" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="jdO-lp-WJ7" secondAttribute="trailing" constant="36" id="55L-Lt-kWk"/>
+                            <constraint firstItem="OuA-rL-Ua1" firstAttribute="leading" secondItem="jdO-lp-WJ7" secondAttribute="leading" id="ND0-g1-rYH"/>
+                            <constraint firstItem="Yd2-Uf-JgH" firstAttribute="top" secondItem="OuA-rL-Ua1" secondAttribute="bottom" constant="96" id="RAU-Fg-kfb"/>
+                            <constraint firstItem="OuA-rL-Ua1" firstAttribute="trailing" secondItem="jdO-lp-WJ7" secondAttribute="trailing" id="XEE-Et-uyN"/>
+                            <constraint firstItem="jdO-lp-WJ7" firstAttribute="top" secondItem="3KY-v3-P0Q" secondAttribute="bottom" constant="44" id="ijZ-U2-LWM"/>
+                            <constraint firstItem="jdO-lp-WJ7" firstAttribute="centerX" secondItem="tTr-wD-whG" secondAttribute="centerX" id="o5L-qg-RpC"/>
+                            <constraint firstItem="jdO-lp-WJ7" firstAttribute="leading" secondItem="tTr-wD-whG" secondAttribute="leading" constant="35" id="pDU-rE-qlD"/>
+                            <constraint firstItem="OuA-rL-Ua1" firstAttribute="top" secondItem="jdO-lp-WJ7" secondAttribute="bottom" constant="23" id="zsj-MQ-bCu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Donations" largeTitleDisplayMode="always" id="rrx-sR-s9h">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="GovindaNamam" id="nUM-SP-wpZ">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuButton" destination="nUM-SP-wpZ" id="zrZ-d0-MBK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r0K-lK-pnG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="720.79999999999995" y="3130.8845577211396"/>
+        </scene>
         <!--Login-->
         <scene sceneID="n4j-Dh-Oto">
             <objects>
@@ -180,7 +269,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Login" id="tUB-Fc-Ph5">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="menu" id="Dcf-nx-O1R">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="GovindaNamam" id="Dcf-nx-O1R">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
                     </navigationItem>
@@ -222,7 +311,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Registration" id="AWV-2m-iMn">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="menu" id="Eon-SZ-EgV">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="GovindaNamam" id="Eon-SZ-EgV">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
                     </navigationItem>
@@ -261,7 +350,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="ఓం నమో వెంకటేశాయ" prompt="ఓం నారాయణాయ" id="kLs-Aw-k51">
-                        <barButtonItem key="leftBarButtonItem" image="menu" id="Cws-7r-1Kr">
+                        <barButtonItem key="leftBarButtonItem" image="GovindaNamam" id="Cws-7r-1Kr">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
                     </navigationItem>
@@ -336,6 +425,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.20000000298023224" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Balaji1" translatesAutoresizingMaskIntoConstraints="NO" id="fL6-Bi-0md">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </imageView>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vTj-ng-wg8">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -350,7 +444,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Contact US" id="lbb-HE-qk8">
-                        <barButtonItem key="leftBarButtonItem" image="menu" id="PbV-Ok-9OU">
+                        <barButtonItem key="leftBarButtonItem" image="GovindaNamam" id="PbV-Ok-9OU">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
                     </navigationItem>
@@ -366,6 +460,6 @@
     </scenes>
     <resources>
         <image name="Balaji1" width="230" height="365"/>
-        <image name="menu" width="22" height="22"/>
+        <image name="GovindaNamam" width="22" height="22"/>
     </resources>
 </document>

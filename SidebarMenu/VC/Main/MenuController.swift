@@ -9,12 +9,12 @@ class MenuController: UIViewController,UITableViewDelegate, UITableViewDataSourc
   
     @IBOutlet weak var featuresTableView: UITableView!
 
-    var featuresList: [String] = ["❁  HOME","❁  ABOUT TCSNI","❁  DOCUMENTS","❁  DONATE","❁  SEVAS","❁  GALLARY","❁  CHANTING","❁  SHARE","❁  CONTACT US","❁  ACCOUNT"]
+    var featuresList: [String] = ["HOME","ABOUT TCSNI","DOCUMENTS","DONATE","SEVAS","GALLARY","CHANTING","SHARE","CONTACT US","ACCOUNT"]
     var navStoryBoardId: String = "" 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let frame = CGRectMake(0, 0, 250,300)
+        let frame = CGRectMake(0, 0, 250,310)
         let headerImageView = UIImageView(frame: frame)
         let image: UIImage = UIImage(named: "TCSNILogo")!
         headerImageView.image = image
@@ -53,7 +53,7 @@ class MenuController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellIdentifier = "featuresIdentifier"
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
-        cell.textLabel?.text = featuresList[indexPath.row]
+        cell.textLabel?.text = "❁  \(featuresList[indexPath.row])"
         return cell
     }
     
@@ -82,17 +82,22 @@ class MenuController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         }
         else if(indexPath.row == 2)
         {
+            navStoryBoardId = "DocumentsViewControllerID"
             let storyboard = UIStoryboard(name: "Documents", bundle: nil)
-            let controller = storyboard.instantiateViewController(withIdentifier: "DocumentsViewControllerID")
+            let controller: UINavigationController = storyboard.instantiateViewController(withIdentifier: navStoryBoardId) as! UINavigationController
+            
+
             self.present(controller, animated: true, completion: nil)
        
         }
         else if(indexPath.row == 3)
         {
       //DONATE
-            let alert = UIAlertController(title: "Alert", message: "Sorry! \(featuresList [indexPath.row]), yet to implement", preferredStyle: UIAlertControllerStyle.alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-            self.present(alert, animated: true, completion: nil)
+            //Load TCSNI
+            navStoryBoardId = "DonateNavigationVCID"
+            let controller: UINavigationController = storyboard.instantiateViewController(withIdentifier: navStoryBoardId) as! UINavigationController
+            self.revealViewController().setFront(controller, animated: true)
+            self.revealViewController().setFrontViewPosition(FrontViewPosition.left, animated: true)
         }
         else if(indexPath.row == 4)
         {
