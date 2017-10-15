@@ -43,7 +43,7 @@
         <!--Menu Controller-->
         <scene sceneID="WvI-gM-KFV">
             <objects>
-                <tableViewController id="c8U-hf-vWv" customClass="MenuController" customModule="SidebarMenu" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="c8U-hf-vWv" customClass="MenuController" customModule="TCSNI_Balaji" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="xq0-y0-osB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -74,7 +74,7 @@
         <!--About TCSNI-->
         <scene sceneID="FqP-yM-fTr">
             <objects>
-                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="uyW-Mv-SPs" customClass="TCSNIViewController" customModule="SidebarMenu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="uyW-Mv-SPs" customClass="TCSNIViewController" customModule="TCSNI_Balaji" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HhS-AL-aTk"/>
                         <viewControllerLayoutGuide type="bottom" id="KAI-Sw-Rsj"/>
@@ -182,7 +182,7 @@
         <!--Donations-->
         <scene sceneID="ddo-eR-6P7">
             <objects>
-                <viewController id="KpJ-O4-1Mj" customClass="DonateViewController" customModule="SidebarMenu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="KpJ-O4-1Mj" customClass="DonateViewController" customModule="TCSNI_Balaji" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3KY-v3-P0Q"/>
                         <viewControllerLayoutGuide type="bottom" id="Yd2-Uf-JgH"/>
@@ -294,7 +294,7 @@ Bank Account : 10214361</string>
         <!--Daily Balaji Sevas-->
         <scene sceneID="OMa-BD-Luh">
             <objects>
-                <viewController id="04m-ki-Jp5" customClass="SevaViewController" customModule="SidebarMenu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="04m-ki-Jp5" customClass="SevaViewController" customModule="TCSNI_Balaji" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lyA-a4-yLp"/>
                         <viewControllerLayoutGuide type="bottom" id="nQE-GG-lTM"/>
@@ -319,7 +319,7 @@ Bank Account : 10214361</string>
                                 </constraints>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="sevaTableViewCellIdentifier" rowHeight="156" id="KvW-Ld-h0k" customClass="SevaTableViewCell" customModule="SidebarMenu" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="sevaTableViewCellIdentifier" rowHeight="156" id="KvW-Ld-h0k" customClass="SevaTableViewCell" customModule="TCSNI_Balaji" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="156"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KvW-Ld-h0k" id="uEM-T5-WUT">
@@ -419,7 +419,7 @@ Bank Account : 10214361</string>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="me9-Bb-rRE">
                                 <rect key="frame" x="7" y="432" width="362" height="235"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">Balaji Idols pratistha took place on June 7th at ICC and since then Balaji volunteers are performing daily sevas like subrabhata seva at morning and Vishnu Sahasranamarchana at evening time followed by Maha nivedana on a daily basis. After prana pratista function (7th June 2015), on every Saturday we have been performing special abhishekam at morning after suprabhata seva and maha prasadam distribution after Vishnu sahasranama pooja in the evening. All sevas are performed by under guidance of TTD qualified priest . These sevas costs lot of money for many items of pooja like flower garlands (we are also changing garlands to all the 3 Idols on every Saturday morning which needs at least 15 bouquets approximately worth of £45), rice, curd, milk, ghee, honey, plates, oil and other pooja items which is costing high amount every week.
+                                <string key="text">Balaji Idols pratistha took place on June 7th at ICC and since then Balaji volunteers are performing daily sevas like subrabhata seva at morning and Vishnu Sahasranamarchana at evening time followed by Maha nivedana on a daily basis. After prana pratista function (7th June 2015), on every Saturday we have been performing special abhishekam at morning after suprabhata seva and maha prasadam distribution after Vishnu sahasranama pooja in the evening. All sevas are performed by under guidance of TTD qualified priest . These sevas costs lot of money for many items of pooja like flower garlands (we are also changing garlands to all the 3 Idols on every Saturday morning which needs at least 15 bouquets approximately worth of £45), rice, curd, milk, ghee, honey, plates, oil and other pooja items which is costing high amount every week.
 
 Our volunteers are also teaching children about Ramayana &amp; Mahabharata to bring awareness about our culture on Saturday evenings.
 
@@ -436,7 +436,7 @@ Our account will be fully transparent and we are happy to supply details of all 
 Govinda Govinda 
 Yours Sincerely,
 Balaji Committee
-Email : tcsni.info@gmail.com</mutableString>
+Email : tcsni.info@gmail.com</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="KohinoorDevanagari-Light" family="Kohinoor Devanagari" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -492,7 +492,7 @@ Email : tcsni.info@gmail.com</mutableString>
         <!--Chant Your Favorite God-->
         <scene sceneID="e5n-Y6-wns">
             <objects>
-                <viewController id="kZ2-UA-bLs" customClass="ChantingViewController" customModule="SidebarMenu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="kZ2-UA-bLs" customClass="ChantingViewController" customModule="TCSNI_Balaji" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uZG-AL-hVh"/>
                         <viewControllerLayoutGuide type="bottom" id="HsQ-cc-0OP"/>
@@ -502,10 +502,10 @@ Email : tcsni.info@gmail.com</mutableString>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Balaji1" translatesAutoresizingMaskIntoConstraints="NO" id="vqu-Jt-mh1">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="97.5" y="133.5" width="180" height="400"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="375" id="NIT-vT-amK"/>
-                                    <constraint firstAttribute="height" constant="667" id="ODt-qk-ndK"/>
+                                    <constraint firstAttribute="width" constant="180" id="NIT-vT-amK"/>
+                                    <constraint firstAttribute="height" constant="400" id="ODt-qk-ndK"/>
                                 </constraints>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yU0-uO-TWp">
@@ -565,7 +565,7 @@ Email : tcsni.info@gmail.com</mutableString>
         <!--Login-->
         <scene sceneID="n4j-Dh-Oto">
             <objects>
-                <viewController id="ZtO-tm-lqC" customClass="LoginViewController" customModule="SidebarMenu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ZtO-tm-lqC" customClass="LoginViewController" customModule="TCSNI_Balaji" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Z2v-8w-N4D"/>
                         <viewControllerLayoutGuide type="bottom" id="4fA-Mt-eD3"/>
@@ -604,7 +604,7 @@ Email : tcsni.info@gmail.com</mutableString>
         <!--Registration-->
         <scene sceneID="QEZ-gg-7xI">
             <objects>
-                <viewController id="Y91-5b-1xd" customClass="RegisterViewController" customModule="SidebarMenu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Y91-5b-1xd" customClass="RegisterViewController" customModule="TCSNI_Balaji" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5CP-3K-ODS"/>
                         <viewControllerLayoutGuide type="bottom" id="OB7-Gh-Apx"/>
@@ -646,7 +646,7 @@ Email : tcsni.info@gmail.com</mutableString>
         <!--ఓం నమో వెంకటేశాయ-->
         <scene sceneID="rFI-qV-1sf">
             <objects>
-                <viewController id="lkr-wy-K6y" customClass="HomeViewController" customModule="SidebarMenu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="lkr-wy-K6y" customClass="HomeViewController" customModule="TCSNI_Balaji" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VhL-lq-hTc"/>
                         <viewControllerLayoutGuide type="bottom" id="5Om-Kj-1Mx"/>
@@ -737,7 +737,7 @@ Email : tcsni.info@gmail.com</mutableString>
         <!--Contact US-->
         <scene sceneID="NOm-17-tzN">
             <objects>
-                <viewController id="CXu-aY-9uy" customClass="ContactUSViewController" customModule="SidebarMenu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="CXu-aY-9uy" customClass="ContactUSViewController" customModule="TCSNI_Balaji" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fu7-dl-5Vw"/>
                         <viewControllerLayoutGuide type="bottom" id="ONw-nM-goI"/>
