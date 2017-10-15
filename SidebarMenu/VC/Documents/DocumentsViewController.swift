@@ -26,20 +26,26 @@ class DocumentsViewController: UIViewController,UITableViewDelegate, UITableView
     
     var documentImageList: [String] = ["Bhajagovindam","Hanuman","Gita","SriVishnu"]
     
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        if self.revealViewController() != nil {
-            menuButton.target = self.revealViewController()
-            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
-            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-        }
+   
+//        navigationController?.navigationBar.topItem?.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: "Done", target: self, action: .plain, action: #Selector(menuButtonTapped:))
+//        
         self.pdfBGView.isHidden = true
     }
     
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func menuButtonTapped(sender: UIBarButtonItem) {
+        self.dismiss(animated: true, completion: nil)
+
+    }
+
     
     //MARK: - TableView Delegate and DataSource Methods
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

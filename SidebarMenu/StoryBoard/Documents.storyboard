@@ -113,7 +113,7 @@
                         <viewLayoutGuide key="safeArea" id="u6u-3W-dr3"/>
                     </view>
                     <navigationItem key="navigationItem" title="Documents" id="Qqj-QD-Qye">
-                        <barButtonItem key="leftBarButtonItem" image="GovindaNamam" id="x6A-sh-Qxm">
+                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="x6A-sh-Qxm">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
                     </navigationItem>
@@ -130,6 +130,5 @@
     </scenes>
     <resources>
         <image name="Balaji1" width="230" height="365"/>
-        <image name="GovindaNamam" width="22" height="22"/>
     </resources>
 </document>
