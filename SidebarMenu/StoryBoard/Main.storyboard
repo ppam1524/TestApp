@@ -12,9 +12,6 @@
         <array key="HelveticaNeue.ttc">
             <string>HelveticaNeue</string>
         </array>
-        <array key="OriyaSangamMN.ttc">
-            <string>OriyaSangamMN</string>
-        </array>
     </customFonts>
     <scenes>
         <!--Reveal View Controller-->
@@ -125,7 +122,65 @@
             </objects>
             <point key="canvasLocation" x="2284" y="260"/>
         </scene>
-        <!--Home-->
+        <!--Navigation Controller-->
+        <scene sceneID="1CT-kZ-qAf">
+            <objects>
+                <navigationController storyboardIdentifier="RegisterNavigationID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KGr-iz-xRF" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YhK-3q-i9u">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Y91-5b-1xd" kind="relationship" relationship="rootViewController" id="td0-um-a6g"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zZb-SQ-VWb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="721" y="1533"/>
+        </scene>
+        <!--Registration-->
+        <scene sceneID="QEZ-gg-7xI">
+            <objects>
+                <viewController id="Y91-5b-1xd" customClass="RegisterViewController" customModule="SidebarMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5CP-3K-ODS"/>
+                        <viewControllerLayoutGuide type="bottom" id="OB7-Gh-Apx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nUB-XE-rhZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xxU-fZ-yff">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Y91-5b-1xd" id="GdZ-6K-I5N"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xxU-fZ-yff" firstAttribute="leading" secondItem="nUB-XE-rhZ" secondAttribute="leading" id="MXR-cC-Ckv"/>
+                            <constraint firstItem="OB7-Gh-Apx" firstAttribute="top" secondItem="xxU-fZ-yff" secondAttribute="bottom" id="l41-sA-toi"/>
+                            <constraint firstItem="xxU-fZ-yff" firstAttribute="top" secondItem="5CP-3K-ODS" secondAttribute="bottom" id="nWs-os-bda"/>
+                            <constraint firstAttribute="trailing" secondItem="xxU-fZ-yff" secondAttribute="trailing" id="vJ7-H5-aNC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Registration" id="AWV-2m-iMn">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="menu" id="Eon-SZ-EgV">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuButton" destination="Eon-SZ-EgV" id="vhh-8N-WWs"/>
+                        <outlet property="webView" destination="xxU-fZ-yff" id="1h4-jN-WdQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5PR-Ld-441" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1476" y="1453"/>
+        </scene>
+        <!--ఓం నారాయణాయ-->
         <scene sceneID="rFI-qV-1sf">
             <objects>
                 <viewController id="lkr-wy-K6y" customClass="HomeViewController" customModule="SidebarMenu" customModuleProvider="target" sceneMemberID="viewController">
@@ -140,26 +195,17 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Balaji1" translatesAutoresizingMaskIntoConstraints="NO" id="nZf-Gm-8xx">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🎄Om Namo Venkatesa🎄" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEb-Vw-Q3c">
-                                <rect key="frame" x="0.0" y="617" width="375" height="42"/>
-                                <fontDescription key="fontDescription" name="OriyaSangamMN" family="Oriya Sangam MN" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="nZf-Gm-8xx" firstAttribute="leading" secondItem="fXV-zy-5p8" secondAttribute="leading" id="HXH-Xl-Apn"/>
-                            <constraint firstItem="lEb-Vw-Q3c" firstAttribute="leading" secondItem="fXV-zy-5p8" secondAttribute="leading" id="HtV-mQ-BfV"/>
                             <constraint firstAttribute="trailing" secondItem="nZf-Gm-8xx" secondAttribute="trailing" id="Ueu-qW-Cff"/>
-                            <constraint firstAttribute="trailing" secondItem="lEb-Vw-Q3c" secondAttribute="trailing" id="Vbg-Bk-XeZ"/>
-                            <constraint firstItem="5Om-Kj-1Mx" firstAttribute="top" secondItem="lEb-Vw-Q3c" secondAttribute="bottom" constant="8" id="jNZ-rm-tzM"/>
                             <constraint firstItem="nZf-Gm-8xx" firstAttribute="centerY" secondItem="fXV-zy-5p8" secondAttribute="centerY" id="mB8-Wf-iOh"/>
                             <constraint firstItem="5Om-Kj-1Mx" firstAttribute="top" secondItem="nZf-Gm-8xx" secondAttribute="bottom" id="n1J-Rn-WlX"/>
                             <constraint firstItem="nZf-Gm-8xx" firstAttribute="centerX" secondItem="fXV-zy-5p8" secondAttribute="centerX" id="wIi-4z-4t2"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="kLs-Aw-k51">
+                    <navigationItem key="navigationItem" title="ఓం నారాయణాయ" id="kLs-Aw-k51">
                         <barButtonItem key="leftBarButtonItem" image="menu" id="Cws-7r-1Kr">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
@@ -206,6 +252,61 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="32b-s2-dim" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1494" y="260"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="YdK-pf-XAk">
+            <objects>
+                <navigationController storyboardIdentifier="ContactUSNavigationID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3xi-9F-K4Y" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ndq-XH-0R6">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="CXu-aY-9uy" kind="relationship" relationship="rootViewController" id="jcf-VU-Ux8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cgJ-Nw-4EH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1294" y="949"/>
+        </scene>
+        <!--Contact US-->
+        <scene sceneID="NOm-17-tzN">
+            <objects>
+                <viewController id="CXu-aY-9uy" customClass="ContactUSViewController" customModule="SidebarMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fu7-dl-5Vw"/>
+                        <viewControllerLayoutGuide type="bottom" id="ONw-nM-goI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ukn-F2-5R0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vTj-ng-wg8">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="vTj-ng-wg8" secondAttribute="trailing" id="Jfy-vA-Ral"/>
+                            <constraint firstItem="vTj-ng-wg8" firstAttribute="top" secondItem="fu7-dl-5Vw" secondAttribute="bottom" id="ei2-uV-wxg"/>
+                            <constraint firstItem="ONw-nM-goI" firstAttribute="top" secondItem="vTj-ng-wg8" secondAttribute="bottom" id="hJt-2P-JnW"/>
+                            <constraint firstItem="vTj-ng-wg8" firstAttribute="leading" secondItem="Ukn-F2-5R0" secondAttribute="leading" id="oD9-pI-09l"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Contact US" id="lbb-HE-qk8">
+                        <barButtonItem key="leftBarButtonItem" image="menu" id="PbV-Ok-9OU">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuButton" destination="PbV-Ok-9OU" id="cyU-gR-IYH"/>
+                        <outlet property="webView" destination="vTj-ng-wg8" id="2Ln-rk-U8e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pep-dP-myz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2117.5999999999999" y="948.57571214392806"/>
         </scene>
     </scenes>
     <resources>

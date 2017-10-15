@@ -53,7 +53,7 @@ class DocumentsViewController: UIViewController,UITableViewDelegate, UITableView
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
-            loadPdf(pdfName: documentsName[indexPath.row])
+        loadPdf(pdfName: documentsName[indexPath.row],onView: self.pdfBGView)
             self.pdfBGView.isHidden = false
     }
     /*
@@ -77,7 +77,7 @@ class DocumentsViewController: UIViewController,UITableViewDelegate, UITableView
     
     //MARK: - PDF Loader Method
     //Load Pdf
-    func loadPdf(pdfName: String) {
+    func loadPdf(pdfName: String,onView:UIView) {
         if let pdfURL = Bundle.main.url(forResource: pdfName, withExtension: "pdf", subdirectory: nil, localization: nil)  {
             do {
                 let data = try Data(contentsOf: pdfURL)
@@ -89,7 +89,7 @@ class DocumentsViewController: UIViewController,UITableViewDelegate, UITableView
                     // Fallback on earlier versions
                     print("not ios9.0", separator: "", terminator: "")
                 }
-                pdfBGView.addSubview(webView)
+                onView.addSubview(webView)
                 
             }
             catch {

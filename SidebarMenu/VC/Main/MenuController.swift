@@ -2,21 +2,34 @@
 
 import UIKit
 
-class MenuController: UIViewController,UITableViewDelegate, UITableViewDataSource {
+
+
+class MenuController: UIViewController,UITableViewDelegate, UITableViewDataSource
+{
+  
     @IBOutlet weak var featuresTableView: UITableView!
 
-    var featuresList: [String] = ["HOME","ABOUT TCSNI","DOCUMENTS","DONATE","SEVAS","CONTACT","GALLARY","CHANTING","REGISTER","SHARE"]
+    var featuresList: [String] = ["HOME","ABOUT TCSNI","DOCUMENTS","DONATE","SEVAS","GALLARY","CHANTING","REGISTER","SHARE","CONTACT US"]
     var navStoryBoardId: String = "" 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        let frame = CGRectMake(0, 0, 250,250)
+        let headerImageView = UIImageView(frame: frame)
+        let image: UIImage = UIImage(named: "TCSNILogo")!
+        headerImageView.image = image
+        featuresTableView.tableHeaderView = headerImageView
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+ 
+    func CGRectMake(_ x: CGFloat, _ y: CGFloat, _ width: CGFloat, _ height: CGFloat) -> CGRect {
+        return CGRect(x: x, y: y, width: width, height: height)
+    }
+
     
     // Mark : UITableViewC Delegate Methods
 
@@ -45,14 +58,16 @@ class MenuController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     }
     
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+
         if (indexPath.row == 0)
         {
             //self.revealViewController().revealToggle(animated: true)
             
             //Load HomeViewController
             navStoryBoardId = "HomeNavigationID"
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let controller: UINavigationController = storyboard.instantiateViewController(withIdentifier: navStoryBoardId) as! UINavigationController
             self.revealViewController().setFront(controller, animated: true)
             self.revealViewController().setFrontViewPosition(FrontViewPosition.left, animated: true)
@@ -61,7 +76,6 @@ class MenuController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         {
             //Load TCSNI
             navStoryBoardId = "TCSNINavigationID"
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let controller: UINavigationController = storyboard.instantiateViewController(withIdentifier: navStoryBoardId) as! UINavigationController
             self.revealViewController().setFront(controller, animated: true)
             self.revealViewController().setFrontViewPosition(FrontViewPosition.left, animated: true)
@@ -71,26 +85,62 @@ class MenuController: UIViewController,UITableViewDelegate, UITableViewDataSourc
             let storyboard = UIStoryboard(name: "Documents", bundle: nil)
             let controller = storyboard.instantiateViewController(withIdentifier: "DocumentsViewControllerID")
             self.present(controller, animated: true, completion: nil)
-            
-            let alert = UIAlertController(title: "Alert", message: "\(featuresList [indexPath.row]) cliked", preferredStyle: UIAlertControllerStyle.alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-            self.present(alert, animated: true, completion: nil)
+       
         }
         else if(indexPath.row == 3)
         {
-      
+      //DONATE
+            let alert = UIAlertController(title: "Alert", message: "Sorry! \(featuresList [indexPath.row]), yet to implement", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
         }
         else if(indexPath.row == 4)
         {
-           
+            //SEVAS
+            let alert = UIAlertController(title: "Alert", message: "Sorry! \(featuresList [indexPath.row]), yet to implement", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
         }
         else if(indexPath.row == 5)
         {
-           
-        } else if(indexPath.row == 6)
-        {
-          
+            //GALLARY
+            let alert = UIAlertController(title: "Alert", message: "Sorry! \(featuresList [indexPath.row]), yet to implement", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
         }
+        else if(indexPath.row == 6)
+        {
+            //CHANTING
+            let alert = UIAlertController(title: "Alert", message: "Sorry! \(featuresList [indexPath.row]), yet to implement", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+        else if(indexPath.row == 7)
+        {
+            //REGISTER
+            //Load TCSNI
+            navStoryBoardId = "RegisterNavigationID"
+            let controller: UINavigationController = storyboard.instantiateViewController(withIdentifier: navStoryBoardId) as! UINavigationController
+            self.revealViewController().setFront(controller, animated: true)
+            self.revealViewController().setFrontViewPosition(FrontViewPosition.left, animated: true)
+        }
+        else if(indexPath.row == 8)
+        {
+            //SHARE
+            let alert = UIAlertController(title: "Alert", message: "Sorry! \(featuresList [indexPath.row]), yet to implement", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+        else if(indexPath.row == 9)
+        {
+            //CONTACT US
+            
+            navStoryBoardId = "ContactUSNavigationID"
+            let controller: UINavigationController = storyboard.instantiateViewController(withIdentifier: navStoryBoardId) as! UINavigationController
+            self.revealViewController().setFront(controller, animated: true)
+            self.revealViewController().setFrontViewPosition(FrontViewPosition.left, animated: true)
+        }
+        
         
       
         
@@ -152,5 +202,6 @@ class MenuController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         // Pass the selected object to the new view controller.
     }
     */
+
 
 }

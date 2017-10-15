@@ -19,6 +19,10 @@ class HomeViewController: UIViewController {
             menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
+        
+       // let logo = UIImage(named: "BalajiAllSymbols")
+       // let imageView = UIImageView(image:logo)
+       // self.navigationItem.titleView = imageView
     }
 
     override func didReceiveMemoryWarning() {

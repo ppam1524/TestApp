@@ -24,13 +24,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Documents" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ldj-Hh-0Se">
-                                <rect key="frame" x="6" y="20" width="362" height="29"/>
+                                <rect key="frame" x="6" y="20" width="362" height="46"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
-                                <color key="textColor" red="0.4136660989" green="0.2541946061" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Asc-fn-GBg">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="81" width="375" height="586"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="documentIdentifier" textLabel="HD3-H9-QuN" detailTextLabel="yyW-US-Tnq" style="IBUITableViewCellStyleSubtitle" id="jj0-ZI-lc0">
@@ -70,7 +70,7 @@
                                     <constraint firstAttribute="height" constant="30" id="gKj-uh-Ibx"/>
                                 </constraints>
                                 <state key="normal" image="close">
-                                    <color key="titleColor" red="0.4136660989" green="0.2541946061" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="doneButtonClicked:" destination="bpa-iR-3m2" eventType="touchUpInside" id="sVB-DH-Dqm"/>
@@ -87,7 +87,7 @@
                                             <constraint firstAttribute="height" constant="30" id="kdh-LF-9aR"/>
                                         </constraints>
                                         <state key="normal" title="Close" image="close">
-                                            <color key="titleColor" red="0.4136660989" green="0.2541946061" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="closePdf:" destination="bpa-iR-3m2" eventType="touchUpInside" id="QF6-oc-yS6"/>
@@ -105,6 +105,7 @@
                         <constraints>
                             <constraint firstItem="Ldj-Hh-0Se" firstAttribute="leading" secondItem="u6u-3W-dr3" secondAttribute="leading" constant="6" id="5xV-o8-T81"/>
                             <constraint firstItem="7sE-gV-zGd" firstAttribute="trailing" secondItem="aTf-Er-o1K" secondAttribute="trailing" id="7k0-5S-2em"/>
+                            <constraint firstItem="Ldj-Hh-0Se" firstAttribute="centerY" secondItem="7sE-gV-zGd" secondAttribute="centerY" id="8Fb-4J-aAb"/>
                             <constraint firstItem="Ldj-Hh-0Se" firstAttribute="centerX" secondItem="u6u-3W-dr3" secondAttribute="centerX" id="A37-wj-tPX"/>
                             <constraint firstItem="u6u-3W-dr3" firstAttribute="trailing" secondItem="Asc-fn-GBg" secondAttribute="trailing" id="MOr-Hd-Iec"/>
                             <constraint firstItem="aTf-Er-o1K" firstAttribute="width" secondItem="7sE-gV-zGd" secondAttribute="width" id="PMK-So-EhO"/>
