@@ -7,28 +7,27 @@
 //
 
 import Foundation
-class ChantingViewController: UIViewController {
+class ChantingViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var menuButton:UIBarButtonItem!
+    @IBOutlet weak var chantingTableView: UITableView!
+
+    var chantingList: [String] = ["ఓం","ఓం నారాయణాయ","ఓం నమో వెంకటేశాయ"]
+    var chantingFileNames: [String] = ["OM","OmNamoNaraanaya","Om_Namo_Venkateshaya"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if self.revealViewController() != nil {
+        if self.revealViewController() != nil
+        {
             menuButton.target = self.revealViewController()
             menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
-            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+      self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
-        
-        // let logo = UIImage(named: "BalajiAllSymbols")
-        // let imageView = UIImageView(image:logo)
-        // self.navigationItem.titleView = imageView
     }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
     
     /*
      // MARK: - Navigation
@@ -40,4 +39,28 @@ class ChantingViewController: UIViewController {
      }
      */
     
+    //MARK: - TableView Delegate and DataSource Methods
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return chantingList.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cellIdentifier = "chantingIdentifier"
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
+        
+        cell.textLabel?.text = chantingList[indexPath.row]
+        cell.textLabel?.backgroundColor = UIColor.clear
+        
+        cell.contentView.backgroundColor = UIColor.clear
+        chantingTableView.backgroundColor = UIColor.clear
+        cell.layer.backgroundColor = UIColor.clear.cgColor
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.playSong(song: chantingFileNames[indexPath.row] as NSString)
+        
+    }
 }

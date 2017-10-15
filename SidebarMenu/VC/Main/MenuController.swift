@@ -57,11 +57,10 @@ class MenuController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         return cell
     }
     
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-
+        let selectedCell : UITableViewCell = tableView.cellForRow(at: indexPath)!
         if (indexPath.row == 0)
         {
             //self.revealViewController().revealToggle(animated: true)
@@ -85,8 +84,6 @@ class MenuController: UIViewController,UITableViewDelegate, UITableViewDataSourc
             navStoryBoardId = "DocumentsViewControllerID"
             let storyboard = UIStoryboard(name: "Documents", bundle: nil)
             let controller: UINavigationController = storyboard.instantiateViewController(withIdentifier: navStoryBoardId) as! UINavigationController
-            
-
             self.present(controller, animated: true, completion: nil)
        
         }
@@ -110,32 +107,39 @@ class MenuController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         else if(indexPath.row == 5)
         {
             //GALLARY
-            let alert = UIAlertController(title: "Alert", message: "Sorry! \(featuresList [indexPath.row]), yet to implement", preferredStyle: UIAlertControllerStyle.alert)
+            let alert = UIAlertController(title: "Sorry", message: "\(featuresList [indexPath.row]) will come soon!", preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
         }
         else if(indexPath.row == 6)
         {
             //CHANTING
-            let alert = UIAlertController(title: "Alert", message: "Sorry! \(featuresList [indexPath.row]), yet to implement", preferredStyle: UIAlertControllerStyle.alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-            self.present(alert, animated: true, completion: nil)
+            navStoryBoardId = "ChantingNavigationVCID"
+            let controller: UINavigationController = storyboard.instantiateViewController(withIdentifier: navStoryBoardId) as! UINavigationController
+            self.revealViewController().setFront(controller, animated: true)
+            self.revealViewController().setFrontViewPosition(FrontViewPosition.left, animated: true)
         }
-//        else if(indexPath.row == 7)
-//        {
-//            //REGISTER
-//            //Load TCSNI
-//            navStoryBoardId = "RegisterNavigationID"
-//            let controller: UINavigationController = storyboard.instantiateViewController(withIdentifier: navStoryBoardId) as! UINavigationController
-//            self.revealViewController().setFront(controller, animated: true)
-//            self.revealViewController().setFrontViewPosition(FrontViewPosition.left, animated: true)
-//        }
         else if(indexPath.row == 7)
         {
             //SHARE
-            let alert = UIAlertController(title: "Alert", message: "Sorry! \(featuresList [indexPath.row]), yet to implement", preferredStyle: UIAlertControllerStyle.alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-            self.present(alert, animated: true, completion: nil)
+            let textToShare = "Download and Look at this awesome app for knowing Incredible India!"
+            let myWebSite = "http://tcsni.com"
+            let objectsToShare : [String] = [textToShare,myWebSite]
+            let activityViewController = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
+
+            // exclude some activity types from the list (optional)
+            activityViewController.excludedActivityTypes = [ UIActivityType.airDrop, UIActivityType.postToFacebook ]
+            // present the view controller
+            
+            // show action sheet
+            if let presenter = activityViewController.popoverPresentationController
+            {
+                presenter.sourceView = selectedCell
+                presenter.sourceRect = selectedCell.bounds
+            }
+            
+            
+            self.present(activityViewController, animated: true, completion: nil)
         }
         else if(indexPath.row == 8)
         {
@@ -148,12 +152,7 @@ class MenuController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         }
         else if(indexPath.row == 9)
         {
-            //CONTACT US
-            
-//            navStoryBoardId = "ContactUSNavigationID"
-//            let controller: UINavigationController = storyboard.instantiateViewController(withIdentifier: navStoryBoardId) as! UINavigationController
-//            self.revealViewController().setFront(controller, animated: true)
-//            self.revealViewController().setFrontViewPosition(FrontViewPosition.left, animated: true)
+            //Account
             
             let actionSheet = UIAlertController(title: "Account", message: nil, preferredStyle: UIAlertControllerStyle.actionSheet)
             actionSheet.addAction(UIAlertAction(title: "Login", style: UIAlertActionStyle.default, handler: { (action) in
@@ -175,6 +174,13 @@ class MenuController: UIViewController,UITableViewDelegate, UITableViewDataSourc
             actionSheet.addAction(UIAlertAction.init(title: "Cancel", style: UIAlertActionStyle.cancel, handler: { (action) in
                 self.dismiss(animated: true, completion: nil)
             }))
+           
+            // show action sheet
+            if let presenter = actionSheet.popoverPresentationController
+            {
+                presenter.sourceView = selectedCell
+                presenter.sourceRect = selectedCell.bounds
+            }
             
             self.present(actionSheet, animated: true, completion: nil)
         }

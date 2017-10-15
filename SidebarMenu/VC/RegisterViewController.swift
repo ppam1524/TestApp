@@ -24,7 +24,6 @@ class RegisterViewController: UIViewController,UIWebViewDelegate
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
 
-        
         if let url = URL(string: "http://tcsni.com/Account/Register") {
             let request = URLRequest(url: url)
             webView.loadRequest(request)

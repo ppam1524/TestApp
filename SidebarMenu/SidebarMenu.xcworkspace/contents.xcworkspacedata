@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:SidebarMenu.xcodeproj">
+      location = "group:/Users/pavan/Documents/TestApp/SidebarMenu/TCSNI Balaji.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

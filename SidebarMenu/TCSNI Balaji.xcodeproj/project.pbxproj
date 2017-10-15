@@ -35,6 +35,8 @@
 		8BCDC98D1F93B7A500C3C193 /* SevaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCDC98C1F93B7A500C3C193 /* SevaViewController.swift */; };
 		8BCDC98F1F93C4E100C3C193 /* SevaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCDC98E1F93C4E100C3C193 /* SevaTableViewCell.swift */; };
 		8BCDC9911F93D50F00C3C193 /* ChantingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCDC9901F93D50F00C3C193 /* ChantingViewController.swift */; };
+		8BCDC9931F93E55400C3C193 /* OmNamoNaraanaya.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BCDC9921F93E55300C3C193 /* OmNamoNaraanaya.mp3 */; };
+		8BCDC9991F93E9E800C3C193 /* Om_Namo_Venkateshaya.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BCDC9981F93E9E800C3C193 /* Om_Namo_Venkateshaya.mp3 */; };
 		E8E88D89A934796CC6536145 /* Pods_SidebarMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D318AB2A8313C069345AD87 /* Pods_SidebarMenu.framework */; };
 		F47029F61A7F27DB00E30A3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47029F51A7F27DB00E30A3C /* AppDelegate.swift */; };
 		F47029FD1A7F27DB00E30A3C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F47029FC1A7F27DB00E30A3C /* Images.xcassets */; };
@@ -83,13 +85,15 @@
 		8BCDC98C1F93B7A500C3C193 /* SevaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SevaViewController.swift; path = VC/SevaViewController.swift; sourceTree = SOURCE_ROOT; };
 		8BCDC98E1F93C4E100C3C193 /* SevaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SevaTableViewCell.swift; path = VC/SevaTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		8BCDC9901F93D50F00C3C193 /* ChantingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChantingViewController.swift; path = VC/ChantingViewController.swift; sourceTree = SOURCE_ROOT; };
+		8BCDC9921F93E55300C3C193 /* OmNamoNaraanaya.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = OmNamoNaraanaya.mp3; sourceTree = "<group>"; };
+		8BCDC9981F93E9E800C3C193 /* Om_Namo_Venkateshaya.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Om_Namo_Venkateshaya.mp3; sourceTree = "<group>"; };
 		A47ADFAD231AA206647EC063 /* Pods-SidebarMenuTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SidebarMenuTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SidebarMenuTests/Pods-SidebarMenuTests.release.xcconfig"; sourceTree = "<group>"; };
 		EC4DF6AE8B96FE77510C85D4 /* Pods-SidebarMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SidebarMenu.release.xcconfig"; path = "Pods/Target Support Files/Pods-SidebarMenu/Pods-SidebarMenu.release.xcconfig"; sourceTree = "<group>"; };
-		F47029F01A7F27DB00E30A3C /* SidebarMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SidebarMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F47029F01A7F27DB00E30A3C /* TCSNI Balaji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TCSNI Balaji.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47029F41A7F27DB00E30A3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F47029F51A7F27DB00E30A3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F47029FC1A7F27DB00E30A3C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		F4702A051A7F27DC00E30A3C /* SidebarMenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SidebarMenuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4702A051A7F27DC00E30A3C /* TCSNI BalajiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TCSNI BalajiTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4702A0A1A7F27DC00E30A3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4702A0B1A7F27DC00E30A3C /* SidebarMenuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarMenuTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -213,6 +217,8 @@
 		F47029E71A7F27DB00E30A3C = {
 			isa = PBXGroup;
 			children = (
+				8BCDC9981F93E9E800C3C193 /* Om_Namo_Venkateshaya.mp3 */,
+				8BCDC9921F93E55300C3C193 /* OmNamoNaraanaya.mp3 */,
 				8B13C1C51F924A11004C1FE1 /* OM.mp3 */,
 				F47029F21A7F27DB00E30A3C /* SidebarMenu */,
 				F4702A081A7F27DC00E30A3C /* SidebarMenuTests */,
@@ -225,8 +231,8 @@
 		F47029F11A7F27DB00E30A3C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F47029F01A7F27DB00E30A3C /* SidebarMenu.app */,
-				F4702A051A7F27DC00E30A3C /* SidebarMenuTests.xctest */,
+				F47029F01A7F27DB00E30A3C /* TCSNI Balaji.app */,
+				F4702A051A7F27DC00E30A3C /* TCSNI BalajiTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -277,9 +283,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F47029EF1A7F27DB00E30A3C /* SidebarMenu */ = {
+		F47029EF1A7F27DB00E30A3C /* TCSNI Balaji */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F4702A0F1A7F27DC00E30A3C /* Build configuration list for PBXNativeTarget "SidebarMenu" */;
+			buildConfigurationList = F4702A0F1A7F27DC00E30A3C /* Build configuration list for PBXNativeTarget "TCSNI Balaji" */;
 			buildPhases = (
 				EF740B08F1C2CFA89A422476 /* [CP] Check Pods Manifest.lock */,
 				F47029EC1A7F27DB00E30A3C /* Sources */,
@@ -292,14 +298,14 @@
 			);
 			dependencies = (
 			);
-			name = SidebarMenu;
+			name = "TCSNI Balaji";
 			productName = SidebarMenu;
-			productReference = F47029F01A7F27DB00E30A3C /* SidebarMenu.app */;
+			productReference = F47029F01A7F27DB00E30A3C /* TCSNI Balaji.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F4702A041A7F27DC00E30A3C /* SidebarMenuTests */ = {
+		F4702A041A7F27DC00E30A3C /* TCSNI BalajiTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F4702A121A7F27DC00E30A3C /* Build configuration list for PBXNativeTarget "SidebarMenuTests" */;
+			buildConfigurationList = F4702A121A7F27DC00E30A3C /* Build configuration list for PBXNativeTarget "TCSNI BalajiTests" */;
 			buildPhases = (
 				64E942030E244A7BC7C76CFB /* [CP] Check Pods Manifest.lock */,
 				F4702A011A7F27DC00E30A3C /* Sources */,
@@ -313,9 +319,9 @@
 			dependencies = (
 				F4702A071A7F27DC00E30A3C /* PBXTargetDependency */,
 			);
-			name = SidebarMenuTests;
+			name = "TCSNI BalajiTests";
 			productName = SidebarMenuTests;
-			productReference = F4702A051A7F27DC00E30A3C /* SidebarMenuTests.xctest */;
+			productReference = F4702A051A7F27DC00E30A3C /* TCSNI BalajiTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -345,7 +351,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F47029EB1A7F27DB00E30A3C /* Build configuration list for PBXProject "SidebarMenu" */;
+			buildConfigurationList = F47029EB1A7F27DB00E30A3C /* Build configuration list for PBXProject "TCSNI Balaji" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -358,8 +364,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F47029EF1A7F27DB00E30A3C /* SidebarMenu */,
-				F4702A041A7F27DC00E30A3C /* SidebarMenuTests */,
+				F47029EF1A7F27DB00E30A3C /* TCSNI Balaji */,
+				F4702A041A7F27DC00E30A3C /* TCSNI BalajiTests */,
 			);
 		};
 /* End PBXProject section */
@@ -369,6 +375,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BCDC9991F93E9E800C3C193 /* Om_Namo_Venkateshaya.mp3 in Resources */,
+				8BCDC9931F93E55400C3C193 /* OmNamoNaraanaya.mp3 in Resources */,
 				8B13C1C61F924A12004C1FE1 /* OM.mp3 in Resources */,
 				8B9CFF5F1F8D93D600235062 /* Main.storyboard in Resources */,
 				8B676EDB1F8ADB0C006D28FE /* gita-big.pdf in Resources */,
@@ -542,7 +550,7 @@
 /* Begin PBXTargetDependency section */
 		F4702A071A7F27DC00E30A3C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F47029EF1A7F27DB00E30A3C /* SidebarMenu */;
+			target = F47029EF1A7F27DB00E30A3C /* TCSNI Balaji */;
 			targetProxy = F4702A061A7F27DC00E30A3C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -783,7 +791,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.appcoda.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SidebarMenu.app/SidebarMenu";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TCSNI Balaji.app/TCSNI Balaji";
 			};
 			name = Debug;
 		};
@@ -801,14 +809,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.appcoda.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SidebarMenu.app/SidebarMenu";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TCSNI Balaji.app/TCSNI Balaji";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F47029EB1A7F27DB00E30A3C /* Build configuration list for PBXProject "SidebarMenu" */ = {
+		F47029EB1A7F27DB00E30A3C /* Build configuration list for PBXProject "TCSNI Balaji" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F4702A0D1A7F27DC00E30A3C /* Debug */,
@@ -817,7 +825,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F4702A0F1A7F27DC00E30A3C /* Build configuration list for PBXNativeTarget "SidebarMenu" */ = {
+		F4702A0F1A7F27DC00E30A3C /* Build configuration list for PBXNativeTarget "TCSNI Balaji" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F4702A101A7F27DC00E30A3C /* Debug */,
@@ -826,7 +834,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F4702A121A7F27DC00E30A3C /* Build configuration list for PBXNativeTarget "SidebarMenuTests" */ = {
+		F4702A121A7F27DC00E30A3C /* Build configuration list for PBXNativeTarget "TCSNI BalajiTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F4702A131A7F27DC00E30A3C /* Debug */,

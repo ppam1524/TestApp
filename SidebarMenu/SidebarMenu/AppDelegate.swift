@@ -49,11 +49,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     func playSong(song: NSString) -> Void
     {
         //Check filepath exits or not.
-        if let filePaths = Bundle.main.path(forResource: "OM", ofType: "mp3")
+        if let filePaths = Bundle.main.path(forResource: song as String, ofType: "mp3")
         {
             do{
                 audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: filePaths))
                 
+                audioPlayer?.numberOfLoops = -1
                 audioPlayer?.prepareToPlay()
                 
                 let audioSession =  AVAudioSession.sharedInstance()

@@ -14,10 +14,6 @@ class SevaTableViewCell: UITableViewCell
     @IBOutlet weak var eveningLabel:UILabel!
 
 
-        
-        // let logo = UIImage(named: "BalajiAllSymbols")
-        // let imageView = UIImageView(image:logo)
-        // self.navigationItem.titleView = imageView
 }
 
     

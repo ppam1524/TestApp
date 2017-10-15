@@ -40,31 +40,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.20000000298023224" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Balaji1" translatesAutoresizingMaskIntoConstraints="NO" id="evK-E5-OvV">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.20000000298023224" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Balaji1" translatesAutoresizingMaskIntoConstraints="NO" id="evK-E5-OvV">
+                                <rect key="frame" x="97.5" y="165.5" width="180" height="400"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="2U3-Rj-TpX"/>
+                                    <constraint firstAttribute="height" constant="400" id="CeE-1p-wb0"/>
+                                </constraints>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Asc-fn-GBg">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="documentIdentifier" textLabel="HD3-H9-QuN" detailTextLabel="yyW-US-Tnq" style="IBUITableViewCellStyleSubtitle" id="jj0-ZI-lc0">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="documentIdentifier" textLabel="HD3-H9-QuN" detailTextLabel="yyW-US-Tnq" rowHeight="80" style="IBUITableViewCellStyleSubtitle" id="jj0-ZI-lc0">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jj0-ZI-lc0" id="KZh-6d-SKE">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HD3-H9-QuN">
-                                                    <rect key="frame" x="15" y="-2" width="34" height="24"/>
+                                                    <rect key="frame" x="15" y="13" width="34" height="24"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yyW-US-Tnq">
-                                                    <rect key="frame" x="15" y="22" width="59.5" height="24"/>
+                                                    <rect key="frame" x="15" y="40" width="59.5" height="24"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="KohinoorDevanagari-Light" family="Kohinoor Devanagari" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -90,9 +93,11 @@
                         <constraints>
                             <constraint firstItem="u6u-3W-dr3" firstAttribute="trailing" secondItem="Asc-fn-GBg" secondAttribute="trailing" id="MOr-Hd-Iec"/>
                             <constraint firstItem="Asc-fn-GBg" firstAttribute="leading" secondItem="u6u-3W-dr3" secondAttribute="leading" id="Q2a-X9-cKf"/>
+                            <constraint firstItem="evK-E5-OvV" firstAttribute="centerX" secondItem="lkh-NC-dnx" secondAttribute="centerX" id="V9R-tI-W3x"/>
                             <constraint firstItem="wer-3Q-nPf" firstAttribute="top" secondItem="Asc-fn-GBg" secondAttribute="top" id="XAQ-Wr-ep0"/>
                             <constraint firstItem="Asc-fn-GBg" firstAttribute="top" secondItem="u6u-3W-dr3" secondAttribute="top" id="YEx-AF-4WQ"/>
                             <constraint firstItem="u6u-3W-dr3" firstAttribute="trailing" secondItem="wer-3Q-nPf" secondAttribute="trailing" id="dLn-Xp-BWH"/>
+                            <constraint firstItem="evK-E5-OvV" firstAttribute="centerY" secondItem="lkh-NC-dnx" secondAttribute="centerY" constant="32" id="hJo-so-oco"/>
                             <constraint firstItem="u6u-3W-dr3" firstAttribute="bottom" secondItem="Asc-fn-GBg" secondAttribute="bottom" id="n5V-Uw-GcK"/>
                             <constraint firstItem="u6u-3W-dr3" firstAttribute="bottom" secondItem="wer-3Q-nPf" secondAttribute="bottom" id="qo4-1x-slZ"/>
                             <constraint firstItem="wer-3Q-nPf" firstAttribute="leading" secondItem="u6u-3W-dr3" secondAttribute="leading" id="vw2-ah-4Km"/>
@@ -108,10 +113,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rQh-dU-PCy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1622" y="105"/>
+            <point key="canvasLocation" x="-1623.2" y="104.7976011994003"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Balaji1" width="230" height="365"/>
+        <image name="Balaji1" width="153" height="338"/>
     </resources>
 </document>
