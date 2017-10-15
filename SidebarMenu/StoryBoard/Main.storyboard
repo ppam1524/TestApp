@@ -180,7 +180,7 @@
             </objects>
             <point key="canvasLocation" x="1476" y="1453"/>
         </scene>
-        <!--ఓం నారాయణాయ-->
+        <!--ఓం నమో వెంకటేశాయ-->
         <scene sceneID="rFI-qV-1sf">
             <objects>
                 <viewController id="lkr-wy-K6y" customClass="HomeViewController" customModule="SidebarMenu" customModuleProvider="target" sceneMemberID="viewController">
@@ -205,7 +205,7 @@
                             <constraint firstItem="nZf-Gm-8xx" firstAttribute="centerX" secondItem="fXV-zy-5p8" secondAttribute="centerX" id="wIi-4z-4t2"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="ఓం నారాయణాయ" id="kLs-Aw-k51">
+                    <navigationItem key="navigationItem" title="ఓం నమో వెంకటేశాయ" prompt="ఓం నారాయణాయ" id="kLs-Aw-k51">
                         <barButtonItem key="leftBarButtonItem" image="menu" id="Cws-7r-1Kr">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
