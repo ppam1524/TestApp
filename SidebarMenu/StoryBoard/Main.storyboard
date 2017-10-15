@@ -10,7 +10,7 @@
     </dependencies>
     <customFonts key="customFonts">
         <array key="HelveticaNeue.ttc">
-            <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue</string>
         </array>
         <array key="OriyaSangamMN.ttc">
             <string>OriyaSangamMN</string>
@@ -33,11 +33,12 @@
                     <connections>
                         <segue destination="c8U-hf-vWv" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="jV6-HV-ODO"/>
                         <segue destination="r6Y-Ay-vEn" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="Rza-r3-avL"/>
+                        <segue destination="kxE-yj-Pcy" kind="custom" identifier="" customClass="SWRevealViewControllerSegueSetController" id="pzd-nE-0Cv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-444" y="51"/>
+            <point key="canvasLocation" x="-1057" y="-170"/>
         </scene>
         <!--Menu Controller-->
         <scene sceneID="WvI-gM-KFV">
@@ -48,30 +49,8 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="y7t-iR-H7G">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="y7t-iR-H7G" id="GKa-W7-9mh">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Features" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dci-QC-5gi">
-                                            <rect key="frame" x="8" y="11" width="359" height="21.5"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="dci-QC-5gi" firstAttribute="centerY" secondItem="GKa-W7-9mh" secondAttribute="centerY" id="6mc-tA-wWa"/>
-                                        <constraint firstItem="dci-QC-5gi" firstAttribute="top" secondItem="GKa-W7-9mh" secondAttribute="top" constant="11" id="ExA-XZ-zzC"/>
-                                        <constraint firstItem="dci-QC-5gi" firstAttribute="centerX" secondItem="GKa-W7-9mh" secondAttribute="centerX" id="JVF-hf-Rye"/>
-                                        <constraint firstItem="dci-QC-5gi" firstAttribute="leading" secondItem="GKa-W7-9mh" secondAttribute="leading" constant="8" id="usP-st-mVf"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                            </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="featuresIdentifier" id="12U-QF-sFT">
-                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="12U-QF-sFT" id="RIb-el-z5w">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -94,7 +73,57 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </mapView>
             </objects>
-            <point key="canvasLocation" x="628" y="202.84857571214394"/>
+            <point key="canvasLocation" x="-444" y="815"/>
+        </scene>
+        <!--About TCSNI-->
+        <scene sceneID="FqP-yM-fTr">
+            <objects>
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="uyW-Mv-SPs" customClass="TCSNIViewController" customModule="SidebarMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HhS-AL-aTk"/>
+                        <viewControllerLayoutGuide type="bottom" id="KAI-Sw-Rsj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wwB-NO-E1r">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LBH-Uo-D1u">
+                                <rect key="frame" x="0.0" y="101" width="375" height="566"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">To identify and address social and cultural needs of Northern Ireland Indian Community in particular and Telugu people in general.  Telugu Cultural Society of Northern Ireland (or TCSNI, as it is well known) is of the biggest Telugu organization in Northern Ireland. This team was formed at a convention in Belfast in 2001 of Telugus from all over Northern Ireland and was incorporated in 2015 as a non--profit organization.  TCSNI aims to perpetuate, integrate, and assimilate the cultural heritage of the Telugu-speaking people into the mainstream of Northern Ireland. Telugu and Indian ethnic organizations around the world look up to TCSNI as a pioneer and role model for its various innovations in promoting culture and serving the community.  During its 14 years history, TCSNI has distinguished itself through its various activities in pursuit of its mission in Northern Ireland and India. It plays an important role in developing, nurturing, preserving and propagating arts specific to the Telugu people.</mutableString>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our Mission:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1k-mw-C2f">
+                                <rect key="frame" x="6" y="84" width="102" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="LBH-Uo-D1u" secondAttribute="trailing" id="04j-IR-KX7"/>
+                            <constraint firstItem="i1k-mw-C2f" firstAttribute="leading" secondItem="wwB-NO-E1r" secondAttribute="leading" constant="6" id="SHw-3Z-Bye"/>
+                            <constraint firstItem="LBH-Uo-D1u" firstAttribute="top" secondItem="i1k-mw-C2f" secondAttribute="bottom" constant="-4" id="YUL-EK-dgf"/>
+                            <constraint firstItem="LBH-Uo-D1u" firstAttribute="leading" secondItem="wwB-NO-E1r" secondAttribute="leading" id="Yur-Uv-rA5"/>
+                            <constraint firstItem="i1k-mw-C2f" firstAttribute="top" secondItem="HhS-AL-aTk" secondAttribute="bottom" constant="20" id="lT4-A8-Qte"/>
+                            <constraint firstItem="KAI-Sw-Rsj" firstAttribute="top" secondItem="LBH-Uo-D1u" secondAttribute="bottom" id="tJw-TZ-Lsr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="About TCSNI" id="BOu-6O-RXV">
+                        <barButtonItem key="leftBarButtonItem" image="menu" id="Pf6-zt-W3b">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuButton" destination="Pf6-zt-W3b" id="ygE-zl-NhU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JlC-2P-j1T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2284" y="260"/>
         </scene>
         <!--Home-->
         <scene sceneID="rFI-qV-1sf">
@@ -108,8 +137,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="balajiSwami" translatesAutoresizingMaskIntoConstraints="NO" id="nZf-Gm-8xx">
-                                <rect key="frame" x="-52.5" y="0.0" width="480" height="667"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Balaji1" translatesAutoresizingMaskIntoConstraints="NO" id="nZf-Gm-8xx">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🎄Om Namo Venkatesa🎄" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEb-Vw-Q3c">
                                 <rect key="frame" x="0.0" y="617" width="375" height="42"/>
@@ -120,7 +149,9 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="nZf-Gm-8xx" firstAttribute="leading" secondItem="fXV-zy-5p8" secondAttribute="leading" id="HXH-Xl-Apn"/>
                             <constraint firstItem="lEb-Vw-Q3c" firstAttribute="leading" secondItem="fXV-zy-5p8" secondAttribute="leading" id="HtV-mQ-BfV"/>
+                            <constraint firstAttribute="trailing" secondItem="nZf-Gm-8xx" secondAttribute="trailing" id="Ueu-qW-Cff"/>
                             <constraint firstAttribute="trailing" secondItem="lEb-Vw-Q3c" secondAttribute="trailing" id="Vbg-Bk-XeZ"/>
                             <constraint firstItem="5Om-Kj-1Mx" firstAttribute="top" secondItem="lEb-Vw-Q3c" secondAttribute="bottom" constant="8" id="jNZ-rm-tzM"/>
                             <constraint firstItem="nZf-Gm-8xx" firstAttribute="centerY" secondItem="fXV-zy-5p8" secondAttribute="centerY" id="mB8-Wf-iOh"/>
@@ -129,7 +160,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="kLs-Aw-k51">
-                        <barButtonItem key="leftBarButtonItem" image="menu" id="Cws-7r-1Kr"/>
+                        <barButtonItem key="leftBarButtonItem" image="menu" id="Cws-7r-1Kr">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="menuButton" destination="Cws-7r-1Kr" id="iLs-QB-iNt"/>
@@ -137,12 +170,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4j1-QU-pnv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2284" y="-656.22188905547227"/>
+            <point key="canvasLocation" x="1871" y="-752"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="W3Q-6h-cff">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="r6Y-Ay-vEn" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="HomeNavigationID" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="r6Y-Ay-vEn" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Lrk-yy-O3V">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -155,11 +188,28 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ead-FI-Nxl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1534" y="-656"/>
+            <point key="canvasLocation" x="276" y="-751"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Meh-in-3aX">
+            <objects>
+                <navigationController storyboardIdentifier="TCSNINavigationID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kxE-yj-Pcy" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="mLV-7S-r8y"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MtG-5z-nwn">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="uyW-Mv-SPs" kind="relationship" relationship="rootViewController" id="VcC-td-6Qx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="32b-s2-dim" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1494" y="260"/>
         </scene>
     </scenes>
     <resources>
-        <image name="balajiSwami" width="480" height="800"/>
+        <image name="Balaji1" width="230" height="365"/>
         <image name="menu" width="22" height="22"/>
     </resources>
 </document>

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3D422938C52EA40F9D13818D /* Pods_SidebarMenuTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 788B666FACA78460367709C5 /* Pods_SidebarMenuTests.framework */; };
+		8B090CEF1F92C7D00048A4C1 /* TCSNIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B090CEE1F92C7D00048A4C1 /* TCSNIViewController.swift */; };
 		8B0D9C0A1F90562100D241E9 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0D9C081F90562000D241E9 /* MenuController.swift */; };
 		8B0D9C0B1F90562100D241E9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0D9C091F90562000D241E9 /* HomeViewController.swift */; };
 		8B13C1A01F91489B004C1FE1 /* AudioPlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B13C19F1F91489B004C1FE1 /* AudioPlay.m */; };
@@ -48,6 +49,7 @@
 		7033E73D8821C5E840441B5A /* Pods-SidebarMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SidebarMenu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SidebarMenu/Pods-SidebarMenu.debug.xcconfig"; sourceTree = "<group>"; };
 		788B666FACA78460367709C5 /* Pods_SidebarMenuTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SidebarMenuTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D318AB2A8313C069345AD87 /* Pods_SidebarMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SidebarMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B090CEE1F92C7D00048A4C1 /* TCSNIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TCSNIViewController.swift; path = VC/TCSNIViewController.swift; sourceTree = SOURCE_ROOT; };
 		8B0D9C081F90562000D241E9 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuController.swift; path = VC/Main/MenuController.swift; sourceTree = SOURCE_ROOT; };
 		8B0D9C091F90562000D241E9 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = VC/Main/HomeViewController.swift; sourceTree = SOURCE_ROOT; };
 		8B13C19E1F91489B004C1FE1 /* AudioPlay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AudioPlay.h; path = ExternalFramework/AudioPlay.h; sourceTree = SOURCE_ROOT; };
@@ -152,6 +154,7 @@
 		8B676ED11F8AD9A4006D28FE /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				8B090CEE1F92C7D00048A4C1 /* TCSNIViewController.swift */,
 				8B0D9C031F9055CD00D241E9 /* Main */,
 				8B6E587A1F90346700A02971 /* Documents */,
 				8B676EBE1F8AD37B006D28FE /* Login */,
@@ -487,6 +490,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B090CEF1F92C7D00048A4C1 /* TCSNIViewController.swift in Sources */,
 				8B13C1A01F91489B004C1FE1 /* AudioPlay.m in Sources */,
 				8B0D9C0B1F90562100D241E9 /* HomeViewController.swift in Sources */,
 				8B0D9C0A1F90562100D241E9 /* MenuController.swift in Sources */,

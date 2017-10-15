@@ -5,7 +5,8 @@ import UIKit
 class MenuController: UIViewController,UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var featuresTableView: UITableView!
 
-    var featuresList: [String] = ["HOME","TCSNI","❋❋DOCUMENTS❋❋","DONATE","SEVAS","CONTACT","SHARE"]
+    var featuresList: [String] = ["HOME","ABOUT TCSNI","DOCUMENTS","DONATE","SEVAS","CONTACT","GALLARY","CHANTING","REGISTER","SHARE"]
+    var navStoryBoardId: String = "" 
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -16,8 +17,18 @@ class MenuController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         // Dispose of any resources that can be recreated.
     }
     
+    
     // Mark : UITableViewC Delegate Methods
 
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        var headerTitle:String = ""
+        if section == 0
+        {
+             headerTitle = "Features"
+        }
+        return headerTitle
+    }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -37,12 +48,23 @@ class MenuController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if (indexPath.row == 0)
         {
-            self.revealViewController().revealToggle(animated: true)
+            //self.revealViewController().revealToggle(animated: true)
+            
+            //Load HomeViewController
+            navStoryBoardId = "HomeNavigationID"
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let controller: UINavigationController = storyboard.instantiateViewController(withIdentifier: navStoryBoardId) as! UINavigationController
+            self.revealViewController().setFront(controller, animated: true)
+            self.revealViewController().setFrontViewPosition(FrontViewPosition.left, animated: true)
+            
         }else if(indexPath.row == 1)
         {
-            let alert = UIAlertController(title: "Alert", message: "\(featuresList [indexPath.row]) cliked", preferredStyle: UIAlertControllerStyle.alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-            self.present(alert, animated: true, completion: nil)
+            //Load TCSNI
+            navStoryBoardId = "TCSNINavigationID"
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let controller: UINavigationController = storyboard.instantiateViewController(withIdentifier: navStoryBoardId) as! UINavigationController
+            self.revealViewController().setFront(controller, animated: true)
+            self.revealViewController().setFrontViewPosition(FrontViewPosition.left, animated: true)
         }
         else if(indexPath.row == 2)
         {
@@ -56,27 +78,22 @@ class MenuController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         }
         else if(indexPath.row == 3)
         {
-            let alert = UIAlertController(title: "Alert", message: "\(featuresList [indexPath.row]) cliked", preferredStyle: UIAlertControllerStyle.alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-            self.present(alert, animated: true, completion: nil)
+      
         }
         else if(indexPath.row == 4)
         {
-            let alert = UIAlertController(title: "Alert", message: "\(featuresList [indexPath.row]) cliked", preferredStyle: UIAlertControllerStyle.alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-            self.present(alert, animated: true, completion: nil)
+           
         }
         else if(indexPath.row == 5)
         {
-            let alert = UIAlertController(title: "Alert", message: "\(featuresList [indexPath.row]) cliked", preferredStyle: UIAlertControllerStyle.alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-            self.present(alert, animated: true, completion: nil)
+           
         } else if(indexPath.row == 6)
         {
-            let alert = UIAlertController(title: "Alert", message: "\(featuresList [indexPath.row]) cliked", preferredStyle: UIAlertControllerStyle.alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-            self.present(alert, animated: true, completion: nil)
+          
         }
+        
+      
+        
     }
     // MARK: - Table view data source
 

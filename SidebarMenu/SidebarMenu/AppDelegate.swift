@@ -18,8 +18,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         // Override point for customization after application launch.
         //FirebaseApp.configure()
         
-        
-        //playSong(song: "OM")
         playSong(song: "OM")
         
         return true
