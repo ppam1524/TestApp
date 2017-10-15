@@ -13,6 +13,7 @@
 		8B090CF51F92FC6B0048A4C1 /* ContactUSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B090CF41F92FC6B0048A4C1 /* ContactUSViewController.swift */; };
 		8B0D9C0A1F90562100D241E9 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0D9C081F90562000D241E9 /* MenuController.swift */; };
 		8B0D9C0B1F90562100D241E9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0D9C091F90562000D241E9 /* HomeViewController.swift */; };
+		8B1105121F9372530050B2BF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1105111F9372530050B2BF /* LoginViewController.swift */; };
 		8B13C1A01F91489B004C1FE1 /* AudioPlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B13C19F1F91489B004C1FE1 /* AudioPlay.m */; };
 		8B13C1C61F924A12004C1FE1 /* OM.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8B13C1C51F924A11004C1FE1 /* OM.mp3 */; };
 		8B676EC21F8AD775006D28FE /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B676EC11F8AD775006D28FE /* SafariServices.framework */; };
@@ -56,6 +57,7 @@
 		8B090CF41F92FC6B0048A4C1 /* ContactUSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContactUSViewController.swift; path = VC/ContactUSViewController.swift; sourceTree = SOURCE_ROOT; };
 		8B0D9C081F90562000D241E9 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuController.swift; path = VC/Main/MenuController.swift; sourceTree = SOURCE_ROOT; };
 		8B0D9C091F90562000D241E9 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = VC/Main/HomeViewController.swift; sourceTree = SOURCE_ROOT; };
+		8B1105111F9372530050B2BF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = VC/Login/LoginViewController.swift; sourceTree = SOURCE_ROOT; };
 		8B13C19E1F91489B004C1FE1 /* AudioPlay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AudioPlay.h; path = ExternalFramework/AudioPlay.h; sourceTree = SOURCE_ROOT; };
 		8B13C19F1F91489B004C1FE1 /* AudioPlay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AudioPlay.m; path = ExternalFramework/AudioPlay.m; sourceTree = SOURCE_ROOT; };
 		8B13C1C51F924A11004C1FE1 /* OM.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = OM.mp3; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 		8B676EBE1F8AD37B006D28FE /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				8B1105111F9372530050B2BF /* LoginViewController.swift */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -504,6 +507,7 @@
 				8B090CF51F92FC6B0048A4C1 /* ContactUSViewController.swift in Sources */,
 				F47029F61A7F27DB00E30A3C /* AppDelegate.swift in Sources */,
 				8B6E587C1F9034BB00A02971 /* DocumentsViewController.swift in Sources */,
+				8B1105121F9372530050B2BF /* LoginViewController.swift in Sources */,
 				8B676ED61F8ADADF006D28FE /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
