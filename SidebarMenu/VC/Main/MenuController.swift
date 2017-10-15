@@ -102,9 +102,10 @@ class MenuController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         else if(indexPath.row == 4)
         {
             //SEVAS
-            let alert = UIAlertController(title: "Alert", message: "Sorry! \(featuresList [indexPath.row]), yet to implement", preferredStyle: UIAlertControllerStyle.alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-            self.present(alert, animated: true, completion: nil)
+            navStoryBoardId = "sevasNavigationVCID"
+            let controller: UINavigationController = storyboard.instantiateViewController(withIdentifier: navStoryBoardId) as! UINavigationController
+            self.revealViewController().setFront(controller, animated: true)
+            self.revealViewController().setFrontViewPosition(FrontViewPosition.left, animated: true)
         }
         else if(indexPath.row == 5)
         {

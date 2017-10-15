@@ -10,6 +10,7 @@
     </dependencies>
     <customFonts key="customFonts">
         <array key="Kohinoor.ttc">
+            <string>KohinoorDevanagari-Light</string>
             <string>KohinoorDevanagari-Regular</string>
             <string>KohinoorDevanagari-Semibold</string>
         </array>
@@ -263,6 +264,204 @@ Bank Account : 10214361</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r0K-lK-pnG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="720.79999999999995" y="3130.8845577211396"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Cad-N6-ABa">
+            <objects>
+                <navigationController storyboardIdentifier="sevasNavigationVCID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CXm-oG-233" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="U1l-MW-njw">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="04m-ki-Jp5" kind="relationship" relationship="rootViewController" id="VC5-BH-Cp0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F40-8Y-gRR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-81" y="3876"/>
+        </scene>
+        <!--Daily Balaji Sevas-->
+        <scene sceneID="OMa-BD-Luh">
+            <objects>
+                <viewController id="04m-ki-Jp5" customClass="SevaViewController" customModule="SidebarMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lyA-a4-yLp"/>
+                        <viewControllerLayoutGuide type="bottom" id="nQE-GG-lTM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bJm-cV-ESo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.20000000298023224" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Balaji1" translatesAutoresizingMaskIntoConstraints="NO" id="hkk-Nh-dPr">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="lT9-jq-mfQ"/>
+                                    <constraint firstAttribute="height" constant="667" id="zql-5T-ubd"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="156" estimatedRowHeight="140" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vgt-Z6-hdP">
+                                <rect key="frame" x="0.0" y="64" width="375" height="328"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="328" id="Hgk-FQ-3KR"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="sevaTableViewCellIdentifier" rowHeight="156" id="KvW-Ld-h0k" customClass="SevaTableViewCell" customModule="SidebarMenu" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="156"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KvW-Ld-h0k" id="uEM-T5-WUT">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="156"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wmS-3u-UfY">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="100" translatesAutoresizingMaskIntoConstraints="NO" id="YXc-Zc-G6b">
+                                                            <rect key="frame" x="158.5" y="10" width="58" height="24"/>
+                                                            <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="1" green="0.98312128730000004" blue="0.81297585360000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="YXc-Zc-G6b" firstAttribute="centerX" secondItem="wmS-3u-UfY" secondAttribute="centerX" id="5hY-8b-R9l"/>
+                                                        <constraint firstItem="YXc-Zc-G6b" firstAttribute="centerY" secondItem="wmS-3u-UfY" secondAttribute="centerY" id="hfm-gc-fZz"/>
+                                                        <constraint firstAttribute="height" constant="44" id="x6A-yl-zuZ"/>
+                                                    </constraints>
+                                                </view>
+                                                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ha-9W-9j2">
+                                                    <rect key="frame" x="0.0" y="44" width="375" height="118"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="8am Suprabatha seva and followed by Abhishekam" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cG1-VR-Or9">
+                                                            <rect key="frame" x="85" y="15" width="290" height="48"/>
+                                                            <fontDescription key="fontDescription" name="KohinoorDevanagari-Light" family="Kohinoor Devanagari" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Morning" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bna-UD-Hgf">
+                                                            <rect key="frame" x="10" y="15" width="67" height="24"/>
+                                                            <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="6pm Archana followed Vishnu Sahasranaamarchana" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9U3-4y-wdD">
+                                                            <rect key="frame" x="85.5" y="61" width="289.5" height="48"/>
+                                                            <fontDescription key="fontDescription" name="KohinoorDevanagari-Light" family="Kohinoor Devanagari" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Evening" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="42F-KY-edC">
+                                                            <rect key="frame" x="10" y="61" width="62.5" height="24"/>
+                                                            <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.76609598286609026" green="1" blue="0.86361106626138184" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="Bna-UD-Hgf" firstAttribute="leading" secondItem="2ha-9W-9j2" secondAttribute="leading" constant="10" id="4qj-3k-6im"/>
+                                                        <constraint firstAttribute="height" constant="118" id="94M-w5-Ljp"/>
+                                                        <constraint firstItem="42F-KY-edC" firstAttribute="leading" secondItem="Bna-UD-Hgf" secondAttribute="leading" id="9oR-9v-ykV"/>
+                                                        <constraint firstAttribute="trailing" secondItem="cG1-VR-Or9" secondAttribute="trailing" id="BQc-6M-K5G"/>
+                                                        <constraint firstItem="9U3-4y-wdD" firstAttribute="leading" secondItem="cG1-VR-Or9" secondAttribute="leading" id="HLe-Nq-gUq"/>
+                                                        <constraint firstItem="cG1-VR-Or9" firstAttribute="top" secondItem="Bna-UD-Hgf" secondAttribute="top" id="HMI-3a-Dej"/>
+                                                        <constraint firstItem="Bna-UD-Hgf" firstAttribute="top" secondItem="2ha-9W-9j2" secondAttribute="top" constant="15" id="Uo9-bI-9wY"/>
+                                                        <constraint firstItem="42F-KY-edC" firstAttribute="top" secondItem="Bna-UD-Hgf" secondAttribute="bottom" constant="22" id="WaR-W4-ibM"/>
+                                                        <constraint firstItem="9U3-4y-wdD" firstAttribute="top" secondItem="42F-KY-edC" secondAttribute="top" id="kFO-Yp-WYI"/>
+                                                        <constraint firstAttribute="trailing" secondItem="9U3-4y-wdD" secondAttribute="trailing" id="w8n-EH-u0J"/>
+                                                        <constraint firstItem="cG1-VR-Or9" firstAttribute="leading" secondItem="Bna-UD-Hgf" secondAttribute="leading" constant="75" id="yb3-Mg-sf3"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="wmS-3u-UfY" firstAttribute="centerX" secondItem="uEM-T5-WUT" secondAttribute="centerX" id="2gq-sN-MPY"/>
+                                                <constraint firstItem="wmS-3u-UfY" firstAttribute="top" secondItem="uEM-T5-WUT" secondAttribute="top" id="5mn-Gi-C8A"/>
+                                                <constraint firstAttribute="trailing" secondItem="2ha-9W-9j2" secondAttribute="trailing" id="KvV-bY-W5C"/>
+                                                <constraint firstItem="wmS-3u-UfY" firstAttribute="leading" secondItem="uEM-T5-WUT" secondAttribute="leading" id="SuA-CD-4rK"/>
+                                                <constraint firstItem="2ha-9W-9j2" firstAttribute="top" secondItem="wmS-3u-UfY" secondAttribute="bottom" id="gYz-qc-hJM"/>
+                                                <constraint firstItem="2ha-9W-9j2" firstAttribute="leading" secondItem="uEM-T5-WUT" secondAttribute="leading" id="oL7-aF-Noy"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dayLabel" destination="YXc-Zc-G6b" id="saq-NL-cgK"/>
+                                            <outlet property="eveningLabel" destination="9U3-4y-wdD" id="XqP-Ql-bRd"/>
+                                            <outlet property="morningLabel" destination="cG1-VR-Or9" id="ICi-u5-IrC"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="04m-ki-Jp5" id="0b4-KP-aKV"/>
+                                    <outlet property="delegate" destination="04m-ki-Jp5" id="M5x-Ov-H5A"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dear Balaji Devotees" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Qh-Jg-RTE">
+                                <rect key="frame" x="0.0" y="400" width="350" height="24"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="me9-Bb-rRE">
+                                <rect key="frame" x="7" y="432" width="362" height="235"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">Balaji Idols pratistha took place on June 7th at ICC and since then Balaji volunteers are performing daily sevas like subrabhata seva at morning and Vishnu Sahasranamarchana at evening time followed by Maha nivedana on a daily basis. After prana pratista function (7th June 2015), on every Saturday we have been performing special abhishekam at morning after suprabhata seva and maha prasadam distribution after Vishnu sahasranama pooja in the evening. All sevas are performed by under guidance of TTD qualified priest . These sevas costs lot of money for many items of pooja like flower garlands (we are also changing garlands to all the 3 Idols on every Saturday morning which needs at least 15 bouquets approximately worth of £45), rice, curd, milk, ghee, honey, plates, oil and other pooja items which is costing high amount every week.
+
+Our volunteers are also teaching children about Ramayana &amp; Mahabharata to bring awareness about our culture on Saturday evenings.
+
+In order to continue these sevas for longer periods, we really need support from all of you people in terms of money and moral support. To cover the above mentioned expenses, we sincerely request all the devotees to initiate a Direct Debit/Standing order for a minimum of £11 per month to the following account atleast for 6-12 months. We will perform pooja on behalf of the donors (on their gotra namas) on special festivals and also their special days (birthday or wedding day). We really appreciate your kind cooperation and coordination.
+
+Name of the account holder:	TCSNI
+TCSNI HSBC Sort code:	40-20-55
+A/C no:	10214361
+Reference:	&lt;&lt;SO + Balaji&gt;&gt;
+After you setup standing order please send email with all your family names and gotram for pooja.
+
+Our account will be fully transparent and we are happy to supply details of all transactions on request. Your co-operation in this regard will be very much appreciated. May Lord Balaji bring health &amp; wealth to all devotees.
+
+Govinda Govinda 
+Yours Sincerely,
+Balaji Committee
+Email : tcsni.info@gmail.com</mutableString>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Light" family="Kohinoor Devanagari" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="me9-Bb-rRE" firstAttribute="leading" secondItem="bJm-cV-ESo" secondAttribute="leading" constant="7" id="1Ie-DB-tWG"/>
+                            <constraint firstItem="Vgt-Z6-hdP" firstAttribute="top" secondItem="lyA-a4-yLp" secondAttribute="bottom" id="A8O-KA-uZ0"/>
+                            <constraint firstItem="hkk-Nh-dPr" firstAttribute="centerX" secondItem="bJm-cV-ESo" secondAttribute="centerX" id="Ao5-Ij-Aiq"/>
+                            <constraint firstAttribute="trailing" secondItem="5Qh-Jg-RTE" secondAttribute="trailing" constant="25" id="LqB-oB-WKf"/>
+                            <constraint firstItem="5Qh-Jg-RTE" firstAttribute="leading" secondItem="bJm-cV-ESo" secondAttribute="leading" id="MdJ-0b-bT3"/>
+                            <constraint firstAttribute="trailing" secondItem="hkk-Nh-dPr" secondAttribute="trailing" id="Pd4-cf-aHe"/>
+                            <constraint firstItem="me9-Bb-rRE" firstAttribute="top" secondItem="5Qh-Jg-RTE" secondAttribute="bottom" constant="8" id="QCP-jT-Q0J"/>
+                            <constraint firstItem="Vgt-Z6-hdP" firstAttribute="centerX" secondItem="bJm-cV-ESo" secondAttribute="centerX" id="Uoi-I5-T7s"/>
+                            <constraint firstItem="hkk-Nh-dPr" firstAttribute="centerY" secondItem="bJm-cV-ESo" secondAttribute="centerY" id="YxN-lk-EO9"/>
+                            <constraint firstAttribute="trailing" secondItem="Vgt-Z6-hdP" secondAttribute="trailing" id="bhL-05-Jge"/>
+                            <constraint firstItem="Vgt-Z6-hdP" firstAttribute="leading" secondItem="bJm-cV-ESo" secondAttribute="leading" id="dZP-IL-gQW"/>
+                            <constraint firstItem="nQE-GG-lTM" firstAttribute="top" secondItem="me9-Bb-rRE" secondAttribute="bottom" id="ik8-bu-wR4"/>
+                            <constraint firstAttribute="trailing" secondItem="me9-Bb-rRE" secondAttribute="trailing" constant="6" id="nYG-Hc-ePo"/>
+                            <constraint firstItem="hkk-Nh-dPr" firstAttribute="leading" secondItem="bJm-cV-ESo" secondAttribute="leading" id="oaw-cq-I8S"/>
+                            <constraint firstItem="5Qh-Jg-RTE" firstAttribute="top" secondItem="Vgt-Z6-hdP" secondAttribute="bottom" constant="8" id="rCP-FR-nIW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Daily Balaji Sevas" id="qNm-gy-10V">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="GovindaNamam" id="pek-AP-i8b">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuButton" destination="pek-AP-i8b" id="iQt-tH-xgB"/>
+                        <outlet property="sevaTableView" destination="Vgt-Z6-hdP" id="Eta-TX-L6T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h6S-hw-CdT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="720.79999999999995" y="3875.7121439280363"/>
         </scene>
         <!--Login-->
         <scene sceneID="n4j-Dh-Oto">

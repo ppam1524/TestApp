@@ -32,6 +32,9 @@
 		8B9CFF601F8D93D600235062 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B9CFF5D1F8D93D600235062 /* Main.storyboard */; };
 		8B9CFF611F8D93D600235062 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B9CFF5E1F8D93D600235062 /* LaunchScreen.xib */; };
 		8B9CFF621F8D93D600235062 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B9CFF5E1F8D93D600235062 /* LaunchScreen.xib */; };
+		8BCDC98D1F93B7A500C3C193 /* SevaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCDC98C1F93B7A500C3C193 /* SevaViewController.swift */; };
+		8BCDC98F1F93C4E100C3C193 /* SevaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCDC98E1F93C4E100C3C193 /* SevaTableViewCell.swift */; };
+		8BCDC9911F93D50F00C3C193 /* ChantingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCDC9901F93D50F00C3C193 /* ChantingViewController.swift */; };
 		E8E88D89A934796CC6536145 /* Pods_SidebarMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D318AB2A8313C069345AD87 /* Pods_SidebarMenu.framework */; };
 		F47029F61A7F27DB00E30A3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47029F51A7F27DB00E30A3C /* AppDelegate.swift */; };
 		F47029FD1A7F27DB00E30A3C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F47029FC1A7F27DB00E30A3C /* Images.xcassets */; };
@@ -77,6 +80,9 @@
 		8B9CFF5A1F8D939F00235062 /* Documents.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Documents.storyboard; path = StoryBoard/Documents.storyboard; sourceTree = SOURCE_ROOT; };
 		8B9CFF5D1F8D93D600235062 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = StoryBoard/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		8B9CFF5E1F8D93D600235062 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LaunchScreen.xib; path = StoryBoard/LaunchScreen.xib; sourceTree = SOURCE_ROOT; };
+		8BCDC98C1F93B7A500C3C193 /* SevaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SevaViewController.swift; path = VC/SevaViewController.swift; sourceTree = SOURCE_ROOT; };
+		8BCDC98E1F93C4E100C3C193 /* SevaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SevaTableViewCell.swift; path = VC/SevaTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		8BCDC9901F93D50F00C3C193 /* ChantingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChantingViewController.swift; path = VC/ChantingViewController.swift; sourceTree = SOURCE_ROOT; };
 		A47ADFAD231AA206647EC063 /* Pods-SidebarMenuTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SidebarMenuTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SidebarMenuTests/Pods-SidebarMenuTests.release.xcconfig"; sourceTree = "<group>"; };
 		EC4DF6AE8B96FE77510C85D4 /* Pods-SidebarMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SidebarMenu.release.xcconfig"; path = "Pods/Target Support Files/Pods-SidebarMenu/Pods-SidebarMenu.release.xcconfig"; sourceTree = "<group>"; };
 		F47029F01A7F27DB00E30A3C /* SidebarMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SidebarMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -167,6 +173,9 @@
 				8B090CEE1F92C7D00048A4C1 /* TCSNIViewController.swift */,
 				8B090CF01F92E8AA0048A4C1 /* RegisterViewController.swift */,
 				8B1105131F937EB20050B2BF /* DonateViewController.swift */,
+				8BCDC98C1F93B7A500C3C193 /* SevaViewController.swift */,
+				8BCDC98E1F93C4E100C3C193 /* SevaTableViewCell.swift */,
+				8BCDC9901F93D50F00C3C193 /* ChantingViewController.swift */,
 				8B0D9C031F9055CD00D241E9 /* Main */,
 				8B6E587A1F90346700A02971 /* Documents */,
 				8B676EBE1F8AD37B006D28FE /* Login */,
@@ -507,10 +516,13 @@
 				8B0D9C0B1F90562100D241E9 /* HomeViewController.swift in Sources */,
 				8B090CF11F92E8AA0048A4C1 /* RegisterViewController.swift in Sources */,
 				8B0D9C0A1F90562100D241E9 /* MenuController.swift in Sources */,
+				8BCDC98F1F93C4E100C3C193 /* SevaTableViewCell.swift in Sources */,
 				8B090CF51F92FC6B0048A4C1 /* ContactUSViewController.swift in Sources */,
 				F47029F61A7F27DB00E30A3C /* AppDelegate.swift in Sources */,
 				8B6E587C1F9034BB00A02971 /* DocumentsViewController.swift in Sources */,
 				8B1105141F937EB20050B2BF /* DonateViewController.swift in Sources */,
+				8BCDC9911F93D50F00C3C193 /* ChantingViewController.swift in Sources */,
+				8BCDC98D1F93B7A500C3C193 /* SevaViewController.swift in Sources */,
 				8B1105121F9372530050B2BF /* LoginViewController.swift in Sources */,
 				8B676ED61F8ADADF006D28FE /* SWRevealViewController.m in Sources */,
 			);
