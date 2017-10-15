@@ -193,41 +193,62 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.20000000298023224" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Balaji1" translatesAutoresizingMaskIntoConstraints="NO" id="QKr-Y5-5wa">
+                            <imageView userInteractionEnabled="NO" alpha="0.20000000298023224" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Balaji1" translatesAutoresizingMaskIntoConstraints="NO" id="QKr-Y5-5wa">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="667" id="24I-83-jj6"/>
+                                    <constraint firstAttribute="width" constant="375" id="B1P-R7-XPD"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdO-lp-WJ7">
-                                <rect key="frame" x="35" y="108" width="304" height="84"/>
-                                <string key="text">Please transfer your donation to the following account 
-</string>
-                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdO-lp-WJ7">
+                                <rect key="frame" x="10" y="104" width="354" height="179"/>
+                                <string key="text">Donation for Lord Sri Venkateshwara(Balaji) temple at ICC
+Your donation will be used for Sri Lord Venkateshwara(Balaji) events at ICC</string>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OuA-rL-Ua1">
-                                <rect key="frame" x="35" y="215" width="304" height="356"/>
+                                <rect key="frame" x="10" y="430" width="355" height="173"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <string key="text">Bank Name : HSBC 
 Bank Holder Name : Telugu Cultural Society of NI 
 Sort code : 40-20-55 
 Bank Account : 10214361</string>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="18"/>
+                                <color key="textColor" red="0.81176470590000005" green="0.70980392160000005" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njH-5p-oW8">
+                                <rect key="frame" x="10" y="304" width="355" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="F8e-D8-gOS"/>
+                                </constraints>
+                                <string key="text">Please transfer your donation to the following account 
+</string>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.60121468320000004" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="jdO-lp-WJ7" secondAttribute="trailing" constant="36" id="55L-Lt-kWk"/>
+                            <constraint firstItem="OuA-rL-Ua1" firstAttribute="top" secondItem="njH-5p-oW8" secondAttribute="bottom" constant="42" id="85p-8O-8HW"/>
+                            <constraint firstItem="njH-5p-oW8" firstAttribute="leading" secondItem="tTr-wD-whG" secondAttribute="leading" constant="10" id="GnX-uE-0NL"/>
+                            <constraint firstItem="QKr-Y5-5wa" firstAttribute="centerX" secondItem="tTr-wD-whG" secondAttribute="centerX" id="Gnp-YH-2n3"/>
                             <constraint firstItem="OuA-rL-Ua1" firstAttribute="leading" secondItem="jdO-lp-WJ7" secondAttribute="leading" id="ND0-g1-rYH"/>
-                            <constraint firstItem="Yd2-Uf-JgH" firstAttribute="top" secondItem="OuA-rL-Ua1" secondAttribute="bottom" constant="96" id="RAU-Fg-kfb"/>
-                            <constraint firstItem="OuA-rL-Ua1" firstAttribute="trailing" secondItem="jdO-lp-WJ7" secondAttribute="trailing" id="XEE-Et-uyN"/>
-                            <constraint firstItem="jdO-lp-WJ7" firstAttribute="top" secondItem="3KY-v3-P0Q" secondAttribute="bottom" constant="44" id="ijZ-U2-LWM"/>
+                            <constraint firstItem="njH-5p-oW8" firstAttribute="leading" secondItem="jdO-lp-WJ7" secondAttribute="leading" id="PiL-rC-hW9"/>
+                            <constraint firstItem="QKr-Y5-5wa" firstAttribute="centerY" secondItem="tTr-wD-whG" secondAttribute="centerY" id="Qhz-cR-ozv"/>
+                            <constraint firstItem="Yd2-Uf-JgH" firstAttribute="top" secondItem="OuA-rL-Ua1" secondAttribute="bottom" constant="64" id="RAU-Fg-kfb"/>
+                            <constraint firstItem="njH-5p-oW8" firstAttribute="top" secondItem="jdO-lp-WJ7" secondAttribute="bottom" constant="21" id="VJO-bv-EjF"/>
+                            <constraint firstItem="jdO-lp-WJ7" firstAttribute="top" secondItem="3KY-v3-P0Q" secondAttribute="bottom" constant="40" id="bUy-pw-aWT"/>
+                            <constraint firstItem="njH-5p-oW8" firstAttribute="centerX" secondItem="OuA-rL-Ua1" secondAttribute="centerX" id="dox-qK-Df8"/>
+                            <constraint firstItem="njH-5p-oW8" firstAttribute="trailing" secondItem="OuA-rL-Ua1" secondAttribute="trailing" id="lo8-5B-Nu2"/>
+                            <constraint firstItem="njH-5p-oW8" firstAttribute="top" secondItem="tTr-wD-whG" secondAttribute="top" constant="304" id="mfZ-QE-tl6"/>
                             <constraint firstItem="jdO-lp-WJ7" firstAttribute="centerX" secondItem="tTr-wD-whG" secondAttribute="centerX" id="o5L-qg-RpC"/>
-                            <constraint firstItem="jdO-lp-WJ7" firstAttribute="leading" secondItem="tTr-wD-whG" secondAttribute="leading" constant="35" id="pDU-rE-qlD"/>
-                            <constraint firstItem="OuA-rL-Ua1" firstAttribute="top" secondItem="jdO-lp-WJ7" secondAttribute="bottom" constant="23" id="zsj-MQ-bCu"/>
+                            <constraint firstAttribute="trailing" secondItem="njH-5p-oW8" secondAttribute="trailing" constant="10" id="tft-4G-pgX"/>
+                            <constraint firstItem="OuA-rL-Ua1" firstAttribute="top" secondItem="njH-5p-oW8" secondAttribute="bottom" constant="42" id="u0q-XI-5Dh"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Donations" largeTitleDisplayMode="always" id="rrx-sR-s9h">

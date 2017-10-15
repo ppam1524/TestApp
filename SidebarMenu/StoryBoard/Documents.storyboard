@@ -112,14 +112,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="u6u-3W-dr3"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Documents" id="Qqj-QD-Qye">
-                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="x6A-sh-Qxm">
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Documents" id="Qqj-QD-Qye"/>
                     <connections>
                         <outlet property="documentsTableView" destination="Asc-fn-GBg" id="nPa-6G-LA3"/>
-                        <outlet property="menuButton" destination="x6A-sh-Qxm" id="HM5-Nw-NE3"/>
                         <outlet property="pdfBGView" destination="wer-3Q-nPf" id="UNU-tV-ehO"/>
                     </connections>
                 </viewController>

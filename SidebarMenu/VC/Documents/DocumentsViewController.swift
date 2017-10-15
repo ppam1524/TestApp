@@ -29,12 +29,15 @@ class DocumentsViewController: UIViewController,UITableViewDelegate, UITableView
     override func viewDidLoad()
     {
         super.viewDidLoad()
-   
-//        navigationController?.navigationBar.topItem?.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: "Done", target: self, action: .plain, action: #Selector(menuButtonTapped:))
-//        
+
+        let rightButton: UIBarButtonItem = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.menuButtonTapped(sender:)))
+
+        self.navigationItem.rightBarButtonItem = rightButton
+        
+        self.navigationItem.rightBarButtonItem?.tintColor = UIColor.black
+
         self.pdfBGView.isHidden = true
     }
-    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
