@@ -140,7 +140,7 @@ class MenuController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         else if(indexPath.row == 8)
         {
             //SHARE
-            let textToShare = "Download and Look at this awesome app for knowing Incredible India!"
+            let textToShare = "Download and Look at this awesome app for knowing Incredible India from Belfast, UK"
             let myWebSite = "http://tcsni.com"
             let objectsToShare : [String] = [textToShare,myWebSite]
             let activityViewController = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
@@ -178,7 +178,7 @@ class MenuController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         {
             //Account
             
-            let actionSheet = UIAlertController(title: "Account info from website", message: nil, preferredStyle: UIAlertControllerStyle.actionSheet)
+            let actionSheet = UIAlertController(title: "Please Login/Register from website for now!", message: nil, preferredStyle: UIAlertControllerStyle.actionSheet)
             actionSheet.addAction(UIAlertAction(title: "Login", style: UIAlertActionStyle.default, handler: { (action) in
                // LoginNavigationVCID
                 self.navStoryBoardId = "LoginNavigationVCID"
@@ -313,10 +313,15 @@ class MenuController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?)
     {
-        controller.dismiss(animated: true, completion: nil)
+        if result == MFMailComposeResult.sent
+        {
         //GALLARY
         let alert = UIAlertController(title: "Mail sent to developer", message: "Thanks for your feedback!", preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
+        }
+        
+        controller.dismiss(animated: true, completion: nil)
+
     }
 }

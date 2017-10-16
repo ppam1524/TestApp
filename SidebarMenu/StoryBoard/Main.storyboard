@@ -15,9 +15,6 @@
             <string>KohinoorDevanagari-Regular</string>
             <string>KohinoorDevanagari-Semibold</string>
         </array>
-        <array key="Papyrus.ttc">
-            <string>Papyrus</string>
-        </array>
     </customFonts>
     <scenes>
         <!--Reveal View Controller-->
@@ -491,7 +488,7 @@ Govinda Govinda
 Yours Sincerely,
 Balaji Committee
 Email : tcsni.info@gmail.com</string>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.81176470590000005" green="0.70980392160000005" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="KohinoorDevanagari-Light" family="Kohinoor Devanagari" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -499,7 +496,7 @@ Email : tcsni.info@gmail.com</string>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="me9-Bb-rRE" firstAttribute="leading" secondItem="bJm-cV-ESo" secondAttribute="leading" constant="7" id="1Ie-DB-tWG"/>
-                            <constraint firstItem="Vgt-Z6-hdP" firstAttribute="top" secondItem="lyA-a4-yLp" secondAttribute="bottom" id="A8O-KA-uZ0"/>
+                            <constraint firstItem="Vgt-Z6-hdP" firstAttribute="top" secondItem="bJm-cV-ESo" secondAttribute="top" constant="64" id="A8O-KA-uZ0"/>
                             <constraint firstItem="hkk-Nh-dPr" firstAttribute="centerX" secondItem="bJm-cV-ESo" secondAttribute="centerX" id="Ao5-Ij-Aiq"/>
                             <constraint firstAttribute="trailing" secondItem="5Qh-Jg-RTE" secondAttribute="trailing" constant="25" id="LqB-oB-WKf"/>
                             <constraint firstItem="5Qh-Jg-RTE" firstAttribute="leading" secondItem="bJm-cV-ESo" secondAttribute="leading" id="MdJ-0b-bT3"/>
@@ -596,7 +593,7 @@ Email : tcsni.info@gmail.com</string>
                         <constraints>
                             <constraint firstItem="vqu-Jt-mh1" firstAttribute="centerY" secondItem="Azq-nz-nYS" secondAttribute="centerY" id="0cH-SX-9h3"/>
                             <constraint firstAttribute="trailing" secondItem="yU0-uO-TWp" secondAttribute="trailing" id="ATL-fu-HN2"/>
-                            <constraint firstItem="yU0-uO-TWp" firstAttribute="top" secondItem="uZG-AL-hVh" secondAttribute="bottom" id="AYi-Ae-ZNc"/>
+                            <constraint firstItem="yU0-uO-TWp" firstAttribute="top" secondItem="Azq-nz-nYS" secondAttribute="top" constant="64" id="AYi-Ae-ZNc"/>
                             <constraint firstItem="vqu-Jt-mh1" firstAttribute="centerX" secondItem="Azq-nz-nYS" secondAttribute="centerX" id="gw8-8a-uIc"/>
                             <constraint firstItem="yU0-uO-TWp" firstAttribute="leading" secondItem="Azq-nz-nYS" secondAttribute="leading" id="uyg-77-9NC"/>
                             <constraint firstItem="HsQ-cc-0OP" firstAttribute="top" secondItem="yU0-uO-TWp" secondAttribute="bottom" id="yMD-cP-JRw"/>
@@ -709,22 +706,20 @@ Email : tcsni.info@gmail.com</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Balaji1" translatesAutoresizingMaskIntoConstraints="NO" id="voB-qF-FhG">
-                                <rect key="frame" x="97.5" y="133.5" width="180" height="400"/>
-                                <color key="backgroundColor" red="0.035285424441099167" green="0.03529912605881691" blue="0.035284556448459625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="180" id="I92-yx-HLv"/>
-                                    <constraint firstAttribute="height" constant="400" id="LUU-Wa-QhX"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happy Diwali" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pa4-cU-YRv">
-                                <rect key="frame" x="128" y="616" width="119" height="31"/>
-                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                <rect key="frame" x="126" y="629" width="122.5" height="28"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="20"/>
+                                <color key="textColor" red="0.81176470590000005" green="0.70980392160000005" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome To TCSNI, Belfast" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYV-0U-A4o">
+                                <rect key="frame" x="0.0" y="98" width="373" height="54.5"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="18"/>
                                 <color key="textColor" red="0.81176470590000005" green="0.70980392160000005" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="crE-Kl-suZ">
-                                <rect key="frame" x="328" y="617" width="45" height="50"/>
+                                <rect key="frame" x="330" y="617" width="45" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="45" id="YRj-9M-KYZ"/>
                                     <constraint firstAttribute="height" constant="50" id="yh1-W5-Da8"/>
@@ -737,33 +732,58 @@ Email : tcsni.info@gmail.com</string>
                                     <constraint firstAttribute="width" constant="45" id="fdA-ka-vJT"/>
                                 </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="godandGodess" translatesAutoresizingMaskIntoConstraints="NO" id="voB-qF-FhG">
+                                <rect key="frame" x="0.0" y="152" width="375" height="469"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="hng-MB-IdL"/>
+                                    <constraint firstAttribute="height" constant="469" id="luz-Gt-e3q"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eo2-I4-7Cp">
+                                <rect key="frame" x="343" y="110.5" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="K4Y-jt-qdp"/>
+                                    <constraint firstAttribute="width" constant="30" id="via-zS-Iz9"/>
+                                </constraints>
+                                <state key="normal" image="Mute"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="5Om-Kj-1Mx" firstAttribute="top" secondItem="voB-qF-FhG" secondAttribute="bottom" constant="46" id="1hG-UP-bRG"/>
                             <constraint firstItem="5Om-Kj-1Mx" firstAttribute="top" secondItem="crE-Kl-suZ" secondAttribute="bottom" id="27K-3n-mVQ"/>
-                            <constraint firstAttribute="trailing" secondItem="crE-Kl-suZ" secondAttribute="trailing" constant="2" id="Aft-8g-1Bn"/>
+                            <constraint firstAttribute="trailing" secondItem="crE-Kl-suZ" secondAttribute="trailing" id="Aft-8g-1Bn"/>
+                            <constraint firstItem="voB-qF-FhG" firstAttribute="top" secondItem="VhL-lq-hTc" secondAttribute="bottom" constant="54.5" id="Cto-oS-1gQ"/>
                             <constraint firstItem="5Om-Kj-1Mx" firstAttribute="top" secondItem="wPb-Jw-XEF" secondAttribute="bottom" id="H1D-aj-Uo9"/>
+                            <constraint firstItem="ZYV-0U-A4o" firstAttribute="top" secondItem="VhL-lq-hTc" secondAttribute="bottom" id="Ish-fF-ipo"/>
                             <constraint firstItem="pa4-cU-YRv" firstAttribute="centerX" secondItem="fXV-zy-5p8" secondAttribute="centerX" id="KRg-n7-qi6"/>
-                            <constraint firstItem="5Om-Kj-1Mx" firstAttribute="top" secondItem="pa4-cU-YRv" secondAttribute="bottom" constant="20" id="Pwo-pm-ZOS"/>
+                            <constraint firstItem="5Om-Kj-1Mx" firstAttribute="top" secondItem="pa4-cU-YRv" secondAttribute="bottom" constant="10" id="Pwo-pm-ZOS"/>
                             <constraint firstItem="voB-qF-FhG" firstAttribute="centerX" secondItem="fXV-zy-5p8" secondAttribute="centerX" id="QYa-lv-TWw"/>
-                            <constraint firstItem="voB-qF-FhG" firstAttribute="centerY" secondItem="fXV-zy-5p8" secondAttribute="centerY" id="UKY-l3-19e"/>
+                            <constraint firstAttribute="trailing" secondItem="ZYV-0U-A4o" secondAttribute="trailing" constant="2" id="bWn-oP-u1N"/>
+                            <constraint firstAttribute="trailing" secondItem="eo2-I4-7Cp" secondAttribute="trailing" constant="2" id="eDm-7V-qba"/>
                             <constraint firstItem="wPb-Jw-XEF" firstAttribute="leading" secondItem="fXV-zy-5p8" secondAttribute="leading" id="jyV-IV-duW"/>
+                            <constraint firstItem="ZYV-0U-A4o" firstAttribute="leading" secondItem="fXV-zy-5p8" secondAttribute="leading" id="l1W-g9-XJU"/>
+                            <constraint firstItem="eo2-I4-7Cp" firstAttribute="centerY" secondItem="ZYV-0U-A4o" secondAttribute="centerY" id="mxc-pA-JEQ"/>
+                            <constraint firstItem="voB-qF-FhG" firstAttribute="top" secondItem="ZYV-0U-A4o" secondAttribute="bottom" id="sUz-Jg-NGt"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="ఓం నమో వెంకటేశాయ" prompt="🕉️ 🕉️ 🕉️ 🕉️  శ్రీ రామ రక్షా సర్వ జగత్రక్షా 🕉️ 🕉️ 🕉️ 🕉️" id="kLs-Aw-k51">
+                    <navigationItem key="navigationItem" title="ఓం నమో వెంకటేశాయ" prompt="ॐ ॐ ॐ ॐ   శ్రీ రామ రక్షా సర్వ జగత్రక్షా  ॐ ॐ ॐ ॐ" id="kLs-Aw-k51">
                         <barButtonItem key="leftBarButtonItem" image="GovindaNamam" id="Cws-7r-1Kr">
                             <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="godBGView" destination="voB-qF-FhG" id="qOV-Yi-Czh"/>
                         <outlet property="leftLamp" destination="wPb-Jw-XEF" id="iqa-ez-JXi"/>
                         <outlet property="menuButton" destination="Cws-7r-1Kr" id="iLs-QB-iNt"/>
                         <outlet property="rightLamp" destination="crE-Kl-suZ" id="fh0-cY-nk2"/>
+                        <outlet property="volumeButton" destination="eo2-I4-7Cp" id="poy-2o-KZ7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4j1-QU-pnv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1869.5999999999999" y="-752.47376311844084"/>
+            <point key="canvasLocation" x="1301.5999999999999" y="-831.63418290854577"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="W3Q-6h-cff">
@@ -859,5 +879,7 @@ Email : tcsni.info@gmail.com</string>
     <resources>
         <image name="Balaji1" width="153" height="338"/>
         <image name="GovindaNamam" width="22" height="22"/>
+        <image name="Mute" width="64" height="64"/>
+        <image name="godandGodess" width="646" height="831"/>
     </resources>
 </document>
