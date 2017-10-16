@@ -1,26 +1,36 @@
 
 
 import UIKit
+import MessageUI
 
 
-
-class MenuController: UIViewController,UITableViewDelegate, UITableViewDataSource
+class MenuController: UIViewController,UITableViewDelegate, UITableViewDataSource,MFMailComposeViewControllerDelegate
 {
   
     @IBOutlet weak var featuresTableView: UITableView!
 
-    var featuresList: [String] = ["HOME","ABOUT TCSNI","DOCUMENTS","DONATE","SEVAS","GALLARY","CHANTING","SHARE","CONTACT US","ACCOUNT"]
+    var featuresList: [String] = ["HOME","ABOUT TCSNI","DOCUMENTS","DONATE","SEVAS","GALLARY","EVENT UPDATES","CHANTING","SHARE","CONTACT US","FEEDBACK","ACCOUNT"]
     var navStoryBoardId: String = "" 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let frame = CGRectMake(0, 0, 250,310)
+
+        //For TableView HeaderView
+        let headerView:UIView =  UIView()
+        headerView.backgroundColor = UIColor.clear
+        let frame = CGRectMake(50   , 0, 150,150)
         let headerImageView = UIImageView(frame: frame)
         let image: UIImage = UIImage(named: "TCSNILogo")!
         headerImageView.image = image
-        featuresTableView.tableHeaderView = headerImageView
+        
+        headerView.addSubview(headerImageView)
+        sizeHeaderToFit()
+
+        featuresTableView.tableHeaderView = headerView;
+        
+        featuresTableView.tableHeaderView?.frame.size = CGSize(width: featuresTableView.frame.width, height: CGFloat(150))
     }
 
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -33,15 +43,15 @@ class MenuController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     
     // Mark : UITableViewC Delegate Methods
 
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        var headerTitle:String = ""
-        if section == 0
-        {
-             headerTitle = "Features"
-        }
-        return headerTitle
-    }
-    
+//    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+//        var headerTitle:String = ""
+//        if section == 0
+//        {
+//             headerTitle = "Features"
+//        }
+//        return headerTitle
+//    }
+//
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -111,7 +121,15 @@ class MenuController: UIViewController,UITableViewDelegate, UITableViewDataSourc
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
         }
+        
         else if(indexPath.row == 6)
+        {
+            //GALLARY
+            let alert = UIAlertController(title: "🕉️ Event Updates 🕉️", message: "We will come soon via Notification, so all live events are at your fingure tips to watch 😊", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+        else if(indexPath.row == 7)
         {
             //CHANTING
             navStoryBoardId = "ChantingNavigationVCID"
@@ -119,7 +137,7 @@ class MenuController: UIViewController,UITableViewDelegate, UITableViewDataSourc
             self.revealViewController().setFront(controller, animated: true)
             self.revealViewController().setFrontViewPosition(FrontViewPosition.left, animated: true)
         }
-        else if(indexPath.row == 7)
+        else if(indexPath.row == 8)
         {
             //SHARE
             let textToShare = "Download and Look at this awesome app for knowing Incredible India!"
@@ -141,7 +159,7 @@ class MenuController: UIViewController,UITableViewDelegate, UITableViewDataSourc
             
             self.present(activityViewController, animated: true, completion: nil)
         }
-        else if(indexPath.row == 8)
+        else if(indexPath.row == 9)
         {
             //CONTACT US
             
@@ -150,7 +168,13 @@ class MenuController: UIViewController,UITableViewDelegate, UITableViewDataSourc
             self.revealViewController().setFront(controller, animated: true)
             self.revealViewController().setFrontViewPosition(FrontViewPosition.left, animated: true)
         }
-        else if(indexPath.row == 9)
+        else if(indexPath.row == 10)
+        {
+            //FeedBack
+            sendEmail()
+            
+        }
+        else if(indexPath.row == 11)
         {
             //Account
             
@@ -185,6 +209,35 @@ class MenuController: UIViewController,UITableViewDelegate, UITableViewDataSourc
             self.present(actionSheet, animated: true, completion: nil)
         }
     }
+    
+//    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+//        let headerView:UIView =  UIView()
+//
+//        //let frame = CGRectMake(0, 0, 250,310)
+//        let frame = CGRectMake(0, 0, 150,150)
+//        let headerImageView = UIImageView(frame: frame)
+//        let image: UIImage = UIImage(named: "TCSNILogo")!
+//        headerImageView.image = image
+//
+//        headerView.addSubview(headerImageView)
+//
+//        sizeHeaderToFit()
+//
+//
+//
+//
+//        return headerView
+//    }
+  
+    func sizeHeaderToFit() {
+        guard let header = featuresTableView.tableHeaderView else { return }
+        header.setNeedsLayout()
+        header.layoutIfNeeded()
+        let height = header.systemLayoutSizeFitting(UILayoutFittingCompressedSize).height
+        header.frame.size.height = height
+        featuresTableView.tableHeaderView = header
+    }
+    
     // MARK: - Table view data source
 
 
@@ -243,5 +296,27 @@ class MenuController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     }
     */
 
+    //MARK : - Mail Method to send mail
+    func sendEmail() {
+        let mailVC = MFMailComposeViewController()
+        mailVC.mailComposeDelegate = self
+        mailVC.setToRecipients(["iosdeveloper.ipa@gmail.com"])
+        mailVC.setSubject("iOS-Sprinter:- Feedback to 'TCSNI-Balaji' - Belfast")
+        mailVC.setMessageBody("Please leave your feedback or suggestion below", isHTML: false)
+        
+        
+        present(mailVC, animated: true, completion: nil)
+    }
 
+    
+    // MARK: - Email Delegate
+    
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?)
+    {
+        controller.dismiss(animated: true, completion: nil)
+        //GALLARY
+        let alert = UIAlertController(title: "Mail sent to developer", message: "Thanks for your feedback!", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
 }

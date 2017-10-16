@@ -44,7 +44,7 @@
         <scene sceneID="WvI-gM-KFV">
             <objects>
                 <tableViewController id="c8U-hf-vWv" customClass="MenuController" customModule="TCSNI_Balaji" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="xq0-y0-osB">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="xq0-y0-osB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -53,7 +53,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="12U-QF-sFT" id="RIb-el-z5w">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -96,7 +96,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <string key="text">To identify and address social and cultural needs of Northern Ireland Indian Community in particular and Telugu people in general.  Telugu Cultural Society of Northern Ireland (or TCSNI, as it is well known) is of the biggest Telugu organization in Northern Ireland. This team was formed at a convention in Belfast in 2001 of Telugus from all over Northern Ireland and was incorporated in 2015 as a non--profit organization.  TCSNI aims to perpetuate, integrate, and assimilate the cultural heritage of the Telugu-speaking people into the mainstream of Northern Ireland. Telugu and Indian ethnic organizations around the world look up to TCSNI as a pioneer and role model for its various innovations in promoting culture and serving the community.  During its 14 years history, TCSNI has distinguished itself through its various activities in pursuit of its mission in Northern Ireland and India. It plays an important role in developing, nurturing, preserving and propagating arts specific to the Telugu people.</string>
                                 <color key="textColor" red="0.81176470590000005" green="0.70980392160000005" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our Mission:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1k-mw-C2f">
@@ -192,74 +192,125 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" alpha="0.20000000298023224" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Balaji1" translatesAutoresizingMaskIntoConstraints="NO" id="QKr-Y5-5wa">
-                                <rect key="frame" x="97.5" y="133.5" width="180" height="400"/>
+                                <rect key="frame" x="97" y="133" width="180" height="400"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="400" id="24I-83-jj6"/>
                                     <constraint firstAttribute="width" constant="180" id="B1P-R7-XPD"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdO-lp-WJ7">
-                                <rect key="frame" x="10" y="72" width="354" height="211"/>
-                                <string key="text">Donation for Lord Sri Venkateshwara(Balaji) temple at ICC
-Your donation will be used for Sri Lord Venkateshwara(Balaji) events at ICC</string>
-                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="18"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="OuA-rL-Ua1">
-                                <rect key="frame" x="10" y="398" width="355" height="205"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kii-5G-N1O">
+                                <rect key="frame" x="16" y="82" width="343" height="461"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <string key="text">Bank Name : HSBC 
-Bank Holder Name : Telugu Cultural Society of NI 
+                                <attributedString key="attributedText">
+                                    <fragment content="Donation for Lord Sri Venkateshwara(Balaji) temple at ICC">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="18" name="KohinoorDevanagari-Bold"/>
+                                            <font key="NSOriginalFont" size="18" name="KohinoorDevanagari-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" Belfast, Northern Ireland">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="18" name="KohinoorDevanagari-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="  ">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="KohinoorDevanagari-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Your donation will be used for Sri Lord Venkateshwara(Balaji) events at ICC">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="14" name="KohinoorDevanagari-Light"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <color key="NSStrokeColor" red="0.26667000000000002" green="0.26667000000000002" blue="0.26667000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="  ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.26667000000000002" green="0.26667000000000002" blue="0.26667000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="14" name="KohinoorDevanagari-Light"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <color key="NSStrokeColor" red="0.26667000000000002" green="0.26667000000000002" blue="0.26667000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Please transfer your donation to the following account ">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="13" name="OpenSans-Light"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <color key="NSStrokeColor" red="0.22745000000000001" green="0.52941000000000005" blue="0.67842999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="  ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.22745000000000001" green="0.52941000000000005" blue="0.67842999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="13" name="OpenSans-Light"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <color key="NSStrokeColor" red="0.22745000000000001" green="0.52941000000000005" blue="0.67842999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Bank Name : HSBC 
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="18" name="KohinoorDevanagari-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <color key="NSStrokeColor" red="0.22745000000000001" green="0.52941000000000005" blue="0.67842999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Bank Holder Name : Telugu Cultural Society of NI 
 Sort code : 40-20-55 
 Bank Account : 10214361</string>
-                                <color key="textColor" red="0.81176470590000005" green="0.70980392160000005" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="17"/>
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="18" name="KohinoorDevanagari-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.22745000000000001" green="0.52941000000000005" blue="0.67842999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njH-5p-oW8">
-                                <rect key="frame" x="10" y="304" width="355" height="84"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="84" id="F8e-D8-gOS"/>
-                                </constraints>
-                                <string key="text">Please transfer your donation to the following account 
-</string>
-                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="18"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="M4B-pw-i9o">
-                                <rect key="frame" x="16" y="551" width="355" height="116"/>
+                                <rect key="frame" x="0.0" y="551" width="371" height="116"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="116" id="3i6-zt-m40"/>
                                 </constraints>
                                 <string key="text">*** To make payment easy and sucure, our developers are tyring to integrate payment gateway in our app itself, so that we can donate directly from app itself. </string>
                                 <color key="textColor" red="0.0012503010419999999" green="1" blue="0.02371519242" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.60121468320000004" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="OuA-rL-Ua1" firstAttribute="top" secondItem="njH-5p-oW8" secondAttribute="bottom" constant="10" id="85p-8O-8HW"/>
-                            <constraint firstItem="njH-5p-oW8" firstAttribute="leading" secondItem="tTr-wD-whG" secondAttribute="leading" constant="10" id="GnX-uE-0NL"/>
+                            <constraint firstItem="M4B-pw-i9o" firstAttribute="top" secondItem="Kii-5G-N1O" secondAttribute="bottom" constant="8" id="6cn-KN-bDA"/>
+                            <constraint firstItem="Kii-5G-N1O" firstAttribute="top" secondItem="3KY-v3-P0Q" secondAttribute="bottom" constant="18" id="CKt-Qo-e2Q"/>
+                            <constraint firstItem="M4B-pw-i9o" firstAttribute="leading" secondItem="tTr-wD-whG" secondAttribute="leading" id="FJo-jC-Dc6"/>
                             <constraint firstItem="QKr-Y5-5wa" firstAttribute="centerX" secondItem="tTr-wD-whG" secondAttribute="centerX" id="Gnp-YH-2n3"/>
+                            <constraint firstAttribute="trailing" secondItem="Kii-5G-N1O" secondAttribute="trailing" constant="16" id="HzQ-c3-v1I"/>
                             <constraint firstItem="Yd2-Uf-JgH" firstAttribute="top" secondItem="M4B-pw-i9o" secondAttribute="bottom" constant="0.5" id="JsB-ig-ayR"/>
-                            <constraint firstItem="M4B-pw-i9o" firstAttribute="leading" secondItem="tTr-wD-whG" secondAttribute="leading" constant="16" id="JzC-CD-5cA"/>
-                            <constraint firstItem="OuA-rL-Ua1" firstAttribute="leading" secondItem="jdO-lp-WJ7" secondAttribute="leading" id="ND0-g1-rYH"/>
-                            <constraint firstItem="njH-5p-oW8" firstAttribute="leading" secondItem="jdO-lp-WJ7" secondAttribute="leading" id="PiL-rC-hW9"/>
                             <constraint firstItem="QKr-Y5-5wa" firstAttribute="centerY" secondItem="tTr-wD-whG" secondAttribute="centerY" id="Qhz-cR-ozv"/>
-                            <constraint firstItem="Yd2-Uf-JgH" firstAttribute="top" secondItem="OuA-rL-Ua1" secondAttribute="bottom" constant="64" id="RAU-Fg-kfb"/>
-                            <constraint firstItem="njH-5p-oW8" firstAttribute="top" secondItem="jdO-lp-WJ7" secondAttribute="bottom" constant="21" id="VJO-bv-EjF"/>
-                            <constraint firstAttribute="trailing" secondItem="M4B-pw-i9o" secondAttribute="trailing" constant="4" id="amC-MW-Wtz"/>
-                            <constraint firstItem="jdO-lp-WJ7" firstAttribute="top" secondItem="3KY-v3-P0Q" secondAttribute="bottom" constant="8" id="bUy-pw-aWT"/>
-                            <constraint firstItem="njH-5p-oW8" firstAttribute="centerX" secondItem="OuA-rL-Ua1" secondAttribute="centerX" id="dox-qK-Df8"/>
-                            <constraint firstItem="njH-5p-oW8" firstAttribute="trailing" secondItem="OuA-rL-Ua1" secondAttribute="trailing" id="lo8-5B-Nu2"/>
-                            <constraint firstItem="njH-5p-oW8" firstAttribute="top" secondItem="tTr-wD-whG" secondAttribute="top" constant="304" id="mfZ-QE-tl6"/>
-                            <constraint firstItem="jdO-lp-WJ7" firstAttribute="centerX" secondItem="tTr-wD-whG" secondAttribute="centerX" id="o5L-qg-RpC"/>
-                            <constraint firstAttribute="trailing" secondItem="njH-5p-oW8" secondAttribute="trailing" constant="10" id="tft-4G-pgX"/>
+                            <constraint firstItem="Kii-5G-N1O" firstAttribute="leading" secondItem="tTr-wD-whG" secondAttribute="leading" constant="16" id="TgO-jw-2Fq"/>
+                            <constraint firstAttribute="trailing" secondItem="M4B-pw-i9o" secondAttribute="trailing" constant="4" id="du1-IW-67B"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Donations" largeTitleDisplayMode="always" id="rrx-sR-s9h">
@@ -670,7 +721,7 @@ Email : tcsni.info@gmail.com</string>
                             <constraint firstItem="voB-qF-FhG" firstAttribute="centerY" secondItem="fXV-zy-5p8" secondAttribute="centerY" id="UKY-l3-19e"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="ఓం నమో వెంకటేశాయ" prompt="❀ ❀  శ్రీ రామ రక్షా సర్వ జగత్రక్షా ❀ ❀ " id="kLs-Aw-k51">
+                    <navigationItem key="navigationItem" title="ఓం నమో వెంకటేశాయ" prompt="🕉️ 🕉️ 🕉️ 🕉️  శ్రీ రామ రక్షా సర్వ జగత్రక్షా 🕉️ 🕉️ 🕉️ 🕉️" id="kLs-Aw-k51">
                         <barButtonItem key="leftBarButtonItem" image="GovindaNamam" id="Cws-7r-1Kr">
                             <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
