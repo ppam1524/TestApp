@@ -15,6 +15,9 @@
             <string>KohinoorDevanagari-Regular</string>
             <string>KohinoorDevanagari-Semibold</string>
         </array>
+        <array key="Papyrus.ttc">
+            <string>Papyrus</string>
+        </array>
     </customFonts>
     <scenes>
         <!--Reveal View Controller-->
@@ -91,7 +94,7 @@
                                     <constraint firstAttribute="height" constant="400" id="R00-uY-ov0"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LBH-Uo-D1u">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="LBH-Uo-D1u">
                                 <rect key="frame" x="0.0" y="132" width="375" height="564"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <string key="text">To identify and address social and cultural needs of Northern Ireland Indian Community in particular and Telugu people in general.  Telugu Cultural Society of Northern Ireland (or TCSNI, as it is well known) is of the biggest Telugu organization in Northern Ireland. This team was formed at a convention in Belfast in 2001 of Telugus from all over Northern Ireland and was incorporated in 2015 as a non--profit organization.  TCSNI aims to perpetuate, integrate, and assimilate the cultural heritage of the Telugu-speaking people into the mainstream of Northern Ireland. Telugu and Indian ethnic organizations around the world look up to TCSNI as a pioneer and role model for its various innovations in promoting culture and serving the community.  During its 14 years history, TCSNI has distinguished itself through its various activities in pursuit of its mission in Northern Ireland and India. It plays an important role in developing, nurturing, preserving and propagating arts specific to the Telugu people.</string>
@@ -467,7 +470,7 @@ Bank Account : 10214361</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="me9-Bb-rRE">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="me9-Bb-rRE">
                                 <rect key="frame" x="7" y="432" width="362" height="235"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <string key="text">Balaji Idols pratistha took place on June 7th at ICC and since then Balaji volunteers are performing daily sevas like subrabhata seva at morning and Vishnu Sahasranamarchana at evening time followed by Maha nivedana on a daily basis. After prana pratista function (7th June 2015), on every Saturday we have been performing special abhishekam at morning after suprabhata seva and maha prasadam distribution after Vishnu sahasranama pooja in the evening. All sevas are performed by under guidance of TTD qualified priest . These sevas costs lot of money for many items of pooja like flower garlands (we are also changing garlands to all the 3 Idols on every Saturday morning which needs at least 15 bouquets approximately worth of £45), rice, curd, milk, ghee, honey, plates, oil and other pooja items which is costing high amount every week.
@@ -573,8 +576,8 @@ Email : tcsni.info@gmail.com</string>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lcr-L9-Lgh">
                                                     <rect key="frame" x="15" y="0.0" width="345" height="44"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="17"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="17"/>
+                                                    <color key="textColor" red="0.81176470590000005" green="0.70980392160000005" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -714,11 +717,37 @@ Email : tcsni.info@gmail.com</string>
                                     <constraint firstAttribute="height" constant="400" id="LUU-Wa-QhX"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happy Diwali" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pa4-cU-YRv">
+                                <rect key="frame" x="128" y="616" width="119" height="31"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                <color key="textColor" red="0.81176470590000005" green="0.70980392160000005" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="crE-Kl-suZ">
+                                <rect key="frame" x="328" y="617" width="45" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="YRj-9M-KYZ"/>
+                                    <constraint firstAttribute="height" constant="50" id="yh1-W5-Da8"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wPb-Jw-XEF">
+                                <rect key="frame" x="0.0" y="617" width="45" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="GZ2-I2-SkB"/>
+                                    <constraint firstAttribute="width" constant="45" id="fdA-ka-vJT"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="5Om-Kj-1Mx" firstAttribute="top" secondItem="crE-Kl-suZ" secondAttribute="bottom" id="27K-3n-mVQ"/>
+                            <constraint firstAttribute="trailing" secondItem="crE-Kl-suZ" secondAttribute="trailing" constant="2" id="Aft-8g-1Bn"/>
+                            <constraint firstItem="5Om-Kj-1Mx" firstAttribute="top" secondItem="wPb-Jw-XEF" secondAttribute="bottom" id="H1D-aj-Uo9"/>
+                            <constraint firstItem="pa4-cU-YRv" firstAttribute="centerX" secondItem="fXV-zy-5p8" secondAttribute="centerX" id="KRg-n7-qi6"/>
+                            <constraint firstItem="5Om-Kj-1Mx" firstAttribute="top" secondItem="pa4-cU-YRv" secondAttribute="bottom" constant="20" id="Pwo-pm-ZOS"/>
                             <constraint firstItem="voB-qF-FhG" firstAttribute="centerX" secondItem="fXV-zy-5p8" secondAttribute="centerX" id="QYa-lv-TWw"/>
                             <constraint firstItem="voB-qF-FhG" firstAttribute="centerY" secondItem="fXV-zy-5p8" secondAttribute="centerY" id="UKY-l3-19e"/>
+                            <constraint firstItem="wPb-Jw-XEF" firstAttribute="leading" secondItem="fXV-zy-5p8" secondAttribute="leading" id="jyV-IV-duW"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="ఓం నమో వెంకటేశాయ" prompt="🕉️ 🕉️ 🕉️ 🕉️  శ్రీ రామ రక్షా సర్వ జగత్రక్షా 🕉️ 🕉️ 🕉️ 🕉️" id="kLs-Aw-k51">
@@ -727,12 +756,14 @@ Email : tcsni.info@gmail.com</string>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="leftLamp" destination="wPb-Jw-XEF" id="iqa-ez-JXi"/>
                         <outlet property="menuButton" destination="Cws-7r-1Kr" id="iLs-QB-iNt"/>
+                        <outlet property="rightLamp" destination="crE-Kl-suZ" id="fh0-cY-nk2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4j1-QU-pnv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1871" y="-752"/>
+            <point key="canvasLocation" x="1869.5999999999999" y="-752.47376311844084"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="W3Q-6h-cff">

@@ -178,7 +178,7 @@ class MenuController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         {
             //Account
             
-            let actionSheet = UIAlertController(title: "Account", message: nil, preferredStyle: UIAlertControllerStyle.actionSheet)
+            let actionSheet = UIAlertController(title: "Account info from website", message: nil, preferredStyle: UIAlertControllerStyle.actionSheet)
             actionSheet.addAction(UIAlertAction(title: "Login", style: UIAlertActionStyle.default, handler: { (action) in
                // LoginNavigationVCID
                 self.navStoryBoardId = "LoginNavigationVCID"

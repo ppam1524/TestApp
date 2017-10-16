@@ -16,7 +16,12 @@
 		8B1105121F9372530050B2BF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1105111F9372530050B2BF /* LoginViewController.swift */; };
 		8B1105141F937EB20050B2BF /* DonateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1105131F937EB20050B2BF /* DonateViewController.swift */; };
 		8B13C1A01F91489B004C1FE1 /* AudioPlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B13C19F1F91489B004C1FE1 /* AudioPlay.m */; };
-		8B13C1C61F924A12004C1FE1 /* OM.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8B13C1C51F924A11004C1FE1 /* OM.mp3 */; };
+		8B312A0F1F94E420008A9F15 /* iOSDevCenters+GIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B312A0E1F94E420008A9F15 /* iOSDevCenters+GIF.swift */; };
+		8B312A111F94E480008A9F15 /* giphy.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B312A101F94E480008A9F15 /* giphy.gif */; };
+		8B312A131F94EB10008A9F15 /* SriSrinivasaGovinda.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8B312A121F94EB10008A9F15 /* SriSrinivasaGovinda.pdf */; };
+		8B312A1B1F950CF2008A9F15 /* Om_Namo_Venkateshaya.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8B312A181F950CF0008A9F15 /* Om_Namo_Venkateshaya.mp3 */; };
+		8B312A1C1F950CF2008A9F15 /* OmNamoNaraanaya.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8B312A191F950CF1008A9F15 /* OmNamoNaraanaya.mp3 */; };
+		8B312A1D1F950CF2008A9F15 /* OM.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8B312A1A1F950CF1008A9F15 /* OM.mp3 */; };
 		8B676EC21F8AD775006D28FE /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B676EC11F8AD775006D28FE /* SafariServices.framework */; };
 		8B676EC41F8AD77A006D28FE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B676EC31F8AD77A006D28FE /* SystemConfiguration.framework */; };
 		8B676ED61F8ADADF006D28FE /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B676ED51F8ADADE006D28FE /* SWRevealViewController.m */; };
@@ -35,7 +40,6 @@
 		8BCDC98D1F93B7A500C3C193 /* SevaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCDC98C1F93B7A500C3C193 /* SevaViewController.swift */; };
 		8BCDC98F1F93C4E100C3C193 /* SevaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCDC98E1F93C4E100C3C193 /* SevaTableViewCell.swift */; };
 		8BCDC9911F93D50F00C3C193 /* ChantingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCDC9901F93D50F00C3C193 /* ChantingViewController.swift */; };
-		8BCDC9931F93E55400C3C193 /* OmNamoNaraanaya.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BCDC9921F93E55300C3C193 /* OmNamoNaraanaya.mp3 */; };
 		8BCDC9991F93E9E800C3C193 /* Om_Namo_Venkateshaya.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BCDC9981F93E9E800C3C193 /* Om_Namo_Venkateshaya.mp3 */; };
 		E8E88D89A934796CC6536145 /* Pods_SidebarMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D318AB2A8313C069345AD87 /* Pods_SidebarMenu.framework */; };
 		F47029F61A7F27DB00E30A3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47029F51A7F27DB00E30A3C /* AppDelegate.swift */; };
@@ -67,7 +71,12 @@
 		8B1105131F937EB20050B2BF /* DonateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DonateViewController.swift; path = VC/DonateViewController.swift; sourceTree = SOURCE_ROOT; };
 		8B13C19E1F91489B004C1FE1 /* AudioPlay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AudioPlay.h; path = ExternalFramework/AudioPlay.h; sourceTree = SOURCE_ROOT; };
 		8B13C19F1F91489B004C1FE1 /* AudioPlay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AudioPlay.m; path = ExternalFramework/AudioPlay.m; sourceTree = SOURCE_ROOT; };
-		8B13C1C51F924A11004C1FE1 /* OM.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = OM.mp3; sourceTree = "<group>"; };
+		8B312A0E1F94E420008A9F15 /* iOSDevCenters+GIF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "iOSDevCenters+GIF.swift"; sourceTree = "<group>"; };
+		8B312A101F94E480008A9F15 /* giphy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = giphy.gif; sourceTree = "<group>"; };
+		8B312A121F94EB10008A9F15 /* SriSrinivasaGovinda.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = SriSrinivasaGovinda.pdf; sourceTree = "<group>"; };
+		8B312A181F950CF0008A9F15 /* Om_Namo_Venkateshaya.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Om_Namo_Venkateshaya.mp3; path = ../../../Desktop/Om_Namo_Venkateshaya.mp3; sourceTree = "<group>"; };
+		8B312A191F950CF1008A9F15 /* OmNamoNaraanaya.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = OmNamoNaraanaya.mp3; sourceTree = "<group>"; };
+		8B312A1A1F950CF1008A9F15 /* OM.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = OM.mp3; sourceTree = "<group>"; };
 		8B676EC11F8AD775006D28FE /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		8B676EC31F8AD77A006D28FE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		8B676ED41F8ADADE006D28FE /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = ExternalFramework/SWRevealViewController.h; sourceTree = SOURCE_ROOT; };
@@ -85,7 +94,6 @@
 		8BCDC98C1F93B7A500C3C193 /* SevaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SevaViewController.swift; path = VC/SevaViewController.swift; sourceTree = SOURCE_ROOT; };
 		8BCDC98E1F93C4E100C3C193 /* SevaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SevaTableViewCell.swift; path = VC/SevaTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		8BCDC9901F93D50F00C3C193 /* ChantingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChantingViewController.swift; path = VC/ChantingViewController.swift; sourceTree = SOURCE_ROOT; };
-		8BCDC9921F93E55300C3C193 /* OmNamoNaraanaya.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = OmNamoNaraanaya.mp3; sourceTree = "<group>"; };
 		8BCDC9981F93E9E800C3C193 /* Om_Namo_Venkateshaya.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Om_Namo_Venkateshaya.mp3; sourceTree = "<group>"; };
 		A47ADFAD231AA206647EC063 /* Pods-SidebarMenuTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SidebarMenuTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SidebarMenuTests/Pods-SidebarMenuTests.release.xcconfig"; sourceTree = "<group>"; };
 		EC4DF6AE8B96FE77510C85D4 /* Pods-SidebarMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SidebarMenu.release.xcconfig"; path = "Pods/Target Support Files/Pods-SidebarMenu/Pods-SidebarMenu.release.xcconfig"; sourceTree = "<group>"; };
@@ -200,6 +208,7 @@
 		8B676ED31F8AD9ED006D28FE /* ExternalFramework */ = {
 			isa = PBXGroup;
 			children = (
+				8B312A0E1F94E420008A9F15 /* iOSDevCenters+GIF.swift */,
 				8B676ED41F8ADADE006D28FE /* SWRevealViewController.h */,
 				8B676ED51F8ADADE006D28FE /* SWRevealViewController.m */,
 			);
@@ -217,9 +226,12 @@
 		F47029E71A7F27DB00E30A3C = {
 			isa = PBXGroup;
 			children = (
+				8B312A181F950CF0008A9F15 /* Om_Namo_Venkateshaya.mp3 */,
+				8B312A1A1F950CF1008A9F15 /* OM.mp3 */,
+				8B312A191F950CF1008A9F15 /* OmNamoNaraanaya.mp3 */,
+				8B312A121F94EB10008A9F15 /* SriSrinivasaGovinda.pdf */,
+				8B312A101F94E480008A9F15 /* giphy.gif */,
 				8BCDC9981F93E9E800C3C193 /* Om_Namo_Venkateshaya.mp3 */,
-				8BCDC9921F93E55300C3C193 /* OmNamoNaraanaya.mp3 */,
-				8B13C1C51F924A11004C1FE1 /* OM.mp3 */,
 				F47029F21A7F27DB00E30A3C /* SidebarMenu */,
 				F4702A081A7F27DC00E30A3C /* SidebarMenuTests */,
 				F47029F11A7F27DB00E30A3C /* Products */,
@@ -375,9 +387,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B312A1B1F950CF2008A9F15 /* Om_Namo_Venkateshaya.mp3 in Resources */,
+				8B312A1C1F950CF2008A9F15 /* OmNamoNaraanaya.mp3 in Resources */,
+				8B312A1D1F950CF2008A9F15 /* OM.mp3 in Resources */,
+				8B312A131F94EB10008A9F15 /* SriSrinivasaGovinda.pdf in Resources */,
+				8B312A111F94E480008A9F15 /* giphy.gif in Resources */,
 				8BCDC9991F93E9E800C3C193 /* Om_Namo_Venkateshaya.mp3 in Resources */,
-				8BCDC9931F93E55400C3C193 /* OmNamoNaraanaya.mp3 in Resources */,
-				8B13C1C61F924A12004C1FE1 /* OM.mp3 in Resources */,
 				8B9CFF5F1F8D93D600235062 /* Main.storyboard in Resources */,
 				8B676EDB1F8ADB0C006D28FE /* gita-big.pdf in Resources */,
 				8B676EDC1F8ADB0C006D28FE /* bhajagovindham.pdf in Resources */,
@@ -520,6 +535,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B090CEF1F92C7D00048A4C1 /* TCSNIViewController.swift in Sources */,
+				8B312A0F1F94E420008A9F15 /* iOSDevCenters+GIF.swift in Sources */,
 				8B13C1A01F91489B004C1FE1 /* AudioPlay.m in Sources */,
 				8B0D9C0B1F90562100D241E9 /* HomeViewController.swift in Sources */,
 				8B090CF11F92E8AA0048A4C1 /* RegisterViewController.swift in Sources */,

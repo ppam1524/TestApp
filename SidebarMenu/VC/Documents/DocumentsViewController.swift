@@ -18,11 +18,11 @@ class DocumentsViewController: UIViewController,UITableViewDelegate, UITableView
     @IBOutlet weak var menuButton:UIBarButtonItem!
 
     
-    var documentsList: [String] = ["Bhajagovindam","HanumanChalisa","Bagawadgita","SriVishnu"]
+    var documentsList: [String] = ["Bhajagovindam","HanumanChalisa","Bagawadgita","SriVishnu","Govinda-Hari-Govinda"]
     
-    var documentsName: [String] = ["bhajagovindham","Sri_Hanuman_Chalisa_Hindi","gita-big","Sri_Vishnu"]
+    var documentsName: [String] = ["bhajagovindham","Sri_Hanuman_Chalisa_Hindi","gita-big","Sri_Vishnu","SriSrinivasaGovinda"]
     
-     var originallyWrittenBy: [String] = ["Originally written by 'Adi Shankara'","Originally written by 'Tulsidas'","Originally written by 'Sage Vyasa'","Originally written by 'Yudhisthira'"]
+     var originallyWrittenBy: [String] = ["Originally written by 'Adi Shankara'","Originally written by 'Tulsidas'","Originally written by 'Sage Vyasa'","Originally written by 'Yudhisthira'","From బ్రహ్మశ్రీ చాగంటి కోటేశ్వరరావు గారు"]
     
     var documentImageList: [String] = ["Bhajagovindam","Hanuman","Gita","SriVishnu"]
     

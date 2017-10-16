@@ -10,8 +10,11 @@ import UIKit
 
 class HomeViewController: UIViewController {
     @IBOutlet weak var menuButton:UIBarButtonItem!
-    
+    @IBOutlet weak var rightLamp: UIImageView!
+    @IBOutlet weak var leftLamp: UIImageView!
+   
     override func viewDidLoad() {
+
         super.viewDidLoad()
 
         if self.revealViewController() != nil {
@@ -19,10 +22,11 @@ class HomeViewController: UIViewController {
             menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
+       
+        let jeremyGif = UIImage.gifImageWithName("giphy")
+        leftLamp.image = jeremyGif;
+        rightLamp.image = jeremyGif;
         
-       // let logo = UIImage(named: "BalajiAllSymbols")
-       // let imageView = UIImageView(image:logo)
-       // self.navigationItem.titleView = imageView
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,7 +34,7 @@ class HomeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    
     /*
     // MARK: - Navigation
 
